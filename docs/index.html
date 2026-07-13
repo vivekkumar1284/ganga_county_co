@@ -1238,9 +1238,6 @@
                     const overlay = document.getElementById('popup-overlay');
                     const closeBtn = document.querySelector('.popup-close');
 
-                    const POPUP_INTERVAL = 30 * 60 * 1000; // 30 minutes in milliseconds
-                    const STORAGE_KEY = 'popupLastClosedTime';
-
                     function showPopup() {
                         popup.style.display = 'block';
                         overlay.style.display = 'block';
@@ -1249,22 +1246,17 @@
                     function closePopup() {
                         popup.style.display = 'none';
                         overlay.style.display = 'none';
-                        localStorage.setItem(STORAGE_KEY, Date.now());
                     }
 
-                    function shouldShowPopup() {
-                        const lastClosed = localStorage.getItem(STORAGE_KEY);
-                        if (!lastClosed) return true;
-                        return (Date.now() - lastClosed) > POPUP_INTERVAL;
+                    // Show popup on every page open (desktop + mobile)
+                    function schedulePopup() {
+                        setTimeout(showPopup, 1200);
                     }
 
-                    // Show popup on page load (with small delay)
-                    window.addEventListener('load', function () {
-                        setTimeout(() => {
-                            if (shouldShowPopup()) {
-                                showPopup();
-                            }
-                        }, 1200);
+                    window.addEventListener('load', schedulePopup);
+                    // Mobile back/forward cache often skips `load`; pageshow covers those visits
+                    window.addEventListener('pageshow', function (event) {
+                        if (event.persisted) schedulePopup();
                     });
 
                     closeBtn.addEventListener('click', closePopup);
