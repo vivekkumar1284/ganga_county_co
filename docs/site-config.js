@@ -10,5 +10,5 @@ window.SITE_CONFIG = {
   web3formsAccessKey: "YOUR_WEB3FORMS_ACCESS_KEY",
 
   // Used for thank-you redirect after form submit
-  siteUrl: "https://YOUR_USERNAME.github.io/ganga_county",
+  siteUrl: "https://gangacounty.com",
 };
