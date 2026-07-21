@@ -138,7 +138,7 @@ Production domain is mapped: **https://gangacounty.com**
 1. Dev implemented robots, sitemap, schema, OG, H1/title fixes.  
 2. Validate schema: [Google Rich Results Test](https://search.google.com/test/rich-results).  
 3. Run PageSpeed on mobile; fix top 3 issues (usually images, unused JS, font load).  
-4. Submit sitemap in Google Search Console (Phase 2).
+4. Submit sitemap in Google Search Console (Phase 2). ✅ submitted `https://gangacounty.com/sitemap.xml`
 
 **Exit criteria:** Sitemap live; robots correct; schema validates; one H1 per page; no duplicate titles. *(code complete — submit in GSC after deploy)*
 
@@ -150,7 +150,7 @@ Production domain is mapped: **https://gangacounty.com**
 
 - [ ] Create **Google Search Console** property for `gangacounty.com` (Domain property preferred).
 - [ ] Verify DNS / HTML file as required.
-- [ ] Submit `https://gangacounty.com/sitemap.xml`.
+- [x] Submit `https://gangacounty.com/sitemap.xml`.
 - [ ] Request indexing for homepage + pricing + location + overview.
 - [ ] Create **Google Analytics 4** (or equivalent) + link to Search Console.
 - [ ] Set up **Bing Webmaster Tools** and submit the same sitemap.
@@ -329,12 +329,28 @@ Ranking without leads is incomplete.
 2. ~~Add `robots.txt` + `sitemap.xml`~~ ✅  
 3. ~~Fix `pricing.html` double title; homepage multiple H1s~~ ✅  
 4. ~~Add JSON-LD + `og:image` sitewide~~ ✅  
-5. Rewrite meta titles/descriptions to Priority keywords from sheet  
-6. Unique body copy + FAQs  
+5. Rewrite meta titles/descriptions to Priority keywords from sheet — use `python3 scripts/seo_assistant.py`  
+6. Unique body copy + FAQs — follow generated `seo-output/.../PLACEMENT_GUIDE.md`  
 7. Image alt pass  
 8. GA4 + GSC verification file  
 9. New pages: FAQ, commercial/Atom City Centre, brochure  
 10. Performance pass (images/JS) — WebP, lazy-load, PageSpeed
+
+### Laptop SEO assistant
+
+```bash
+python3 scripts/seo_assistant.py
+# then open seo-output/<timestamp>/PLACEMENT_GUIDE.md and drafts/
+```
+
+Optional LLM-enriched intros:
+
+```bash
+export OPENAI_API_KEY=sk-...
+python3 scripts/seo_assistant.py --llm
+```
+
+Keywords live in `scripts/seo_keywords.json` (from the SEO_Work sheet).
 
 ---
 

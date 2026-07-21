@@ -6878,3 +6878,12 @@ footer.main-footer.footer-v3 {
     height: 50px;
     border-radius: 6px;
 }
+
+/* SEO content blocks */
+
+        .seo-content p, .seo-faq p { color: #444; line-height: 1.7; margin-bottom: 1rem; }
+        .seo-content h2, .seo-faq h2 { font-size: 1.75rem; margin-bottom: 1rem; color: #173b2c; }
+        .seo-faq h3 { font-size: 1.1rem; margin: 1.25rem 0 0.4rem; color: #173b2c; }
+        .seo-links a { color: #f89420; text-decoration: underline; }
+        .seo-content a { color: #173b2c; text-decoration: underline; }
+
