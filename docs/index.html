@@ -59,119 +59,92 @@
         #popup-overlay {
             position: fixed;
             inset: 0;
-            background: rgba(0, 0, 0, 0.75);
+            background: rgba(0, 0, 0, 0.78);
             display: none;
-            z-index: 9998;
+            z-index: 99998;
         }
 
-        /* Popup Box */
+        /* Price-revision image popup (similar to gangacounty.co.in promo popup) */
         .gc-popup {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: #fff;
-            width: 90%;
-            max-width: 460px;
-            border-radius: 6px;
+            background: transparent;
+            width: min(92vw, 520px);
+            max-width: 520px;
+            border-radius: 8px;
             display: none;
-            z-index: 9999;
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
-            overflow: hidden;
+            z-index: 99999;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+            overflow: visible;
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
-        /* Close Button */
         .gc-popup .popup-close {
             position: absolute;
-            top: 10px;
-            right: 14px;
+            top: -14px;
+            right: -14px;
             background: #000;
             color: #fff;
-            border: none;
-            width: 34px;
-            height: 34px;
+            border: 2px solid #fff;
+            width: 38px;
+            height: 38px;
             font-size: 24px;
+            line-height: 1;
             cursor: pointer;
             border-radius: 50%;
-            padding: 0 0 5px;
+            padding: 0 0 3px;
+            z-index: 2;
         }
 
-        /* Header */
-        .gc-popup-header {
-            text-align: center;
-            padding: 25px 20px 20px;
+        .gc-popup-promo {
+            display: block;
+            margin: 0;
+            padding: 0;
+            border-radius: 8px;
+            overflow: hidden;
             background: #fff;
         }
 
-        .gc-popup-header img {
-            max-width: 140px;
-            margin-bottom: 8px;
-        }
-
-        .gc-location {
-            font-size: 14px;
-            color: #444;
-            margin-bottom: 10px;
-        }
-
-        .gc-price {
-            background: #f89420;
-            color: #000;
-            font-weight: 600;
-            padding: 10px;
-            font-size: 14px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Form Body */
-        .gc-popup-body {
-            padding: 25px;
-        }
-
-        .gc-popup-body label {
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 5px;
+        .gc-popup-promo img {
             display: block;
-        }
-
-        .gc-popup-body input {
             width: 100%;
-            padding: 11px 12px;
-            border: 1px solid #ddd;
-            margin-bottom: 14px;
-            font-size: 14px;
-            border-radius: 3px;
+            height: auto;
+            max-height: min(82vh, 720px);
+            object-fit: contain;
+            background: #fff;
         }
 
-        .gc-popup-body input:focus {
-            outline: none;
-            border-color: #173b2c;
+        .gc-popup-cta {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 12px 14px 14px;
+            background: #fff;
         }
 
-        /* Submit Button */
-        .gc-submit-btn {
-            width: 100%;
-            padding: 13px;
+        .gc-popup-cta a {
+            display: inline-block;
             background: #f89420;
             color: #000;
-            border: none;
             font-weight: 700;
-            letter-spacing: 1px;
-            cursor: pointer;
+            font-size: 13px;
+            letter-spacing: 0.4px;
+            text-decoration: none;
+            padding: 10px 16px;
             border-radius: 3px;
-            transition: background 0.3s ease;
         }
 
-        .gc-submit-btn:hover {
-            background: #f89420;
-        }
-
-        /* Mobile Responsive */
         @media (max-width: 480px) {
             .gc-popup {
-                max-width: 92%;
+                width: 94vw;
+                max-width: 94vw;
+            }
+            .gc-popup .popup-close {
+                top: -12px;
+                right: -8px;
             }
         }
     </style>
@@ -1431,37 +1404,19 @@
             <!-- Popup Overlay -->
             <div id="popup-overlay"></div>
 
-            <!-- Popup Form -->
-            <div id="popup-form" class="gc-popup">
-                <button class="popup-close">&times;</button>
-
-                <div class="gc-popup-header">
-                    <img src="assets/images/home-one/logo/logo-main.png" alt="Ganga County">
-                    <p class="gc-location">Ganga County, Garh Mukteshwar</p>
-                    <div class="gc-price">STARTING PRICE ₹20,000 / SQ.YD.</div>
+            <!-- Price Revision Popup (image promo, like gangacounty.co.in) -->
+            <div id="popup-form" class="gc-popup" role="dialog" aria-modal="true" aria-label="Price revision coming soon">
+                <button type="button" class="popup-close" aria-label="Close">&times;</button>
+                <div class="gc-popup-promo">
+                    <a href="contact.html">
+                        <img src="assets/images/price-revision.jpeg" alt="Ganga County price revision coming soon — invest today in Garhmukteshwar plots">
+                    </a>
+                    <div class="gc-popup-cta">
+                        <a href="tel:+919650655124">Call Now</a>
+                        <a href="contact.html">Enquire Now</a>
+                        <a href="pricing.html">View Price List</a>
+                    </div>
                 </div>
-
-                <form class="gc-popup-body" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-                <input type="hidden" name="subject" value="Ganga County Website Lead">
-                <input type="hidden" name="from_name" value="Ganga County Website">
-                <input type="hidden" name="redirect" value="thank-you.html">
-                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
-
-                    <label>Name*</label>
-                    <input type="text" name="name" placeholder="Your Name" required>
-
-                    <label>Email*</label>
-                    <input type="email" name="email" placeholder="Email Address" required>
-
-                    <label>Mobile Number*</label>
-                    <input type="tel" name="phone" placeholder="Mobile Number" required>
-
-                    <label>Message*</label>
-                    <input type="text" name="message" value="Interested in Site Visit">
-
-                    <button type="submit" class="gc-submit-btn">SUBMIT</button>
-                </form>
             </div>
 
 
@@ -1470,30 +1425,39 @@
                     const popup = document.getElementById('popup-form');
                     const overlay = document.getElementById('popup-overlay');
                     const closeBtn = document.querySelector('.popup-close');
+                    let scheduled = false;
 
                     function showPopup() {
                         popup.style.display = 'block';
                         overlay.style.display = 'block';
+                        document.body.style.overflow = 'hidden';
                     }
 
                     function closePopup() {
                         popup.style.display = 'none';
                         overlay.style.display = 'none';
+                        document.body.style.overflow = '';
                     }
 
-                    // Show popup on every page open (desktop + mobile)
                     function schedulePopup() {
-                        setTimeout(showPopup, 1200);
+                        if (scheduled) return;
+                        scheduled = true;
+                        setTimeout(showPopup, 1000);
                     }
 
                     window.addEventListener('load', schedulePopup);
-                    // Mobile back/forward cache often skips `load`; pageshow covers those visits
                     window.addEventListener('pageshow', function (event) {
-                        if (event.persisted) schedulePopup();
+                        if (event.persisted) {
+                            scheduled = false;
+                            schedulePopup();
+                        }
                     });
 
                     closeBtn.addEventListener('click', closePopup);
                     overlay.addEventListener('click', closePopup);
+                    document.addEventListener('keydown', function (e) {
+                        if (e.key === 'Escape') closePopup();
+                    });
                 })();
             </script>
 
