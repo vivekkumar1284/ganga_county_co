@@ -6,8 +6,8 @@
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <!--====== Title ======-->
-    <title>Ganga County Residential & Commercial Plots in Garhmukteshwar</title>
-    <meta name="description" content="Ganga County offers approved residential and commercial plots in Garhmukteshwar with excellent connectivity and high investment potential."/>
+    <title>Ganga County Residential Plots Garhmukteshwar | 150–500 Sq.Yd.</title>
+    <meta name="description" content="Buy Ganga County residential plots in Garhmukteshwar — approved 150–500 Sq.Yd. villa plots starting at ₹20,000/Sq.Yd. Enquire for a site visit today."/>
     <meta name="keywords" content="ganga county residential plots, ganga county residential plots garhmukteshwar, ganga county plot project, ganga county approved plots, ganga county commercial plots, ganga county commercial property, buy plots in ganga county, invest in ganga county, real estate in ganga county, properties in ganga county, residential plots in garhmukteshwar, plot near garhmukteshwar, real estate project in Garhmukteshwar">
     <link rel="canonical" href="https://gangacounty.com/" />
     <meta name="robots" content="index,follow"/>
@@ -18,14 +18,14 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Ganga County" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Ganga County Residential & Commercial Plots in Garhmukteshwar" />
-    <meta property="og:description" content="Ganga County offers approved residential and commercial plots in Garhmukteshwar with excellent connectivity and high investment potential." />
+    <meta property="og:title" content="Ganga County Residential Plots Garhmukteshwar | 150–500 Sq.Yd." />
+    <meta property="og:description" content="Buy Ganga County residential plots in Garhmukteshwar — approved 150–500 Sq.Yd. villa plots starting at ₹20,000/Sq.Yd. Enquire for a site visit today." />
     <meta property="og:url" content="https://gangacounty.com/" />
     <meta property="og:image" content="https://gangacounty.com/assets/images/home-one/hero/hero-bg1.jpg" />
     <meta property="og:image:alt" content="Ganga County residential plots in Garhmukteshwar" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Ganga County Residential & Commercial Plots in Garhmukteshwar" />
-    <meta name="twitter:description" content="Ganga County offers approved residential and commercial plots in Garhmukteshwar with excellent connectivity and high investment potential." />
+    <meta name="twitter:title" content="Ganga County Residential Plots Garhmukteshwar | 150–500 Sq.Yd." />
+    <meta name="twitter:description" content="Buy Ganga County residential plots in Garhmukteshwar — approved 150–500 Sq.Yd. villa plots starting at ₹20,000/Sq.Yd. Enquire for a site visit today." />
     <meta name="twitter:image" content="https://gangacounty.com/assets/images/home-one/hero/hero-bg1.jpg" />
     <meta property="article:published_time" content="2026-01-03T10:51:43+00:00" />
 <!--====== Favicon Icon ======-->
@@ -59,119 +59,92 @@
         #popup-overlay {
             position: fixed;
             inset: 0;
-            background: rgba(0, 0, 0, 0.75);
+            background: rgba(0, 0, 0, 0.78);
             display: none;
-            z-index: 9998;
+            z-index: 99998;
         }
 
-        /* Popup Box */
+        /* Price-revision image popup (similar to gangacounty.co.in promo popup) */
         .gc-popup {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: #fff;
-            width: 90%;
-            max-width: 460px;
-            border-radius: 6px;
+            background: transparent;
+            width: min(92vw, 520px);
+            max-width: 520px;
+            border-radius: 8px;
             display: none;
-            z-index: 9999;
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
-            overflow: hidden;
+            z-index: 99999;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+            overflow: visible;
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
-        /* Close Button */
         .gc-popup .popup-close {
             position: absolute;
-            top: 10px;
-            right: 14px;
+            top: -14px;
+            right: -14px;
             background: #000;
             color: #fff;
-            border: none;
-            width: 34px;
-            height: 34px;
+            border: 2px solid #fff;
+            width: 38px;
+            height: 38px;
             font-size: 24px;
+            line-height: 1;
             cursor: pointer;
             border-radius: 50%;
-            padding: 0 0 5px;
+            padding: 0 0 3px;
+            z-index: 2;
         }
 
-        /* Header */
-        .gc-popup-header {
-            text-align: center;
-            padding: 25px 20px 20px;
+        .gc-popup-promo {
+            display: block;
+            margin: 0;
+            padding: 0;
+            border-radius: 8px;
+            overflow: hidden;
             background: #fff;
         }
 
-        .gc-popup-header img {
-            max-width: 140px;
-            margin-bottom: 8px;
-        }
-
-        .gc-location {
-            font-size: 14px;
-            color: #444;
-            margin-bottom: 10px;
-        }
-
-        .gc-price {
-            background: #f89420;
-            color: #000;
-            font-weight: 600;
-            padding: 10px;
-            font-size: 14px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Form Body */
-        .gc-popup-body {
-            padding: 25px;
-        }
-
-        .gc-popup-body label {
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 5px;
+        .gc-popup-promo img {
             display: block;
-        }
-
-        .gc-popup-body input {
             width: 100%;
-            padding: 11px 12px;
-            border: 1px solid #ddd;
-            margin-bottom: 14px;
-            font-size: 14px;
-            border-radius: 3px;
+            height: auto;
+            max-height: min(82vh, 720px);
+            object-fit: contain;
+            background: #fff;
         }
 
-        .gc-popup-body input:focus {
-            outline: none;
-            border-color: #173b2c;
+        .gc-popup-cta {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 12px 14px 14px;
+            background: #fff;
         }
 
-        /* Submit Button */
-        .gc-submit-btn {
-            width: 100%;
-            padding: 13px;
+        .gc-popup-cta a {
+            display: inline-block;
             background: #f89420;
             color: #000;
-            border: none;
             font-weight: 700;
-            letter-spacing: 1px;
-            cursor: pointer;
+            font-size: 13px;
+            letter-spacing: 0.4px;
+            text-decoration: none;
+            padding: 10px 16px;
             border-radius: 3px;
-            transition: background 0.3s ease;
         }
 
-        .gc-submit-btn:hover {
-            background: #f89420;
-        }
-
-        /* Mobile Responsive */
         @media (max-width: 480px) {
             .gc-popup {
-                max-width: 92%;
+                width: 94vw;
+                max-width: 94vw;
+            }
+            .gc-popup .popup-close {
+                top: -12px;
+                right: -8px;
             }
         }
     </style>
@@ -236,6 +209,56 @@
     }
     </script>
 
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Ganga County government approved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Ganga County is a government-approved gated township in Garhmukteshwar offering residential and commercial plots with planned infrastructure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What plot sizes are available at Ganga County?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Residential villa plots are available in 150, 225, 300 and 500 Sq.Yd. sizes to suit different budgets and home plans."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the starting price of Ganga County plots?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plots at Ganga County start from ₹20,000 per Sq.Yd. Check the live price list page for the latest Ganga County plot price and payment plan details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Ganga County located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ganga County is in Garhmukteshwar, near Garh Ganga, Uttar Pradesh — close to Garh town, the railway station, Brij Ghat and the Ganga Expressway corridor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I buy a commercial plot or shop at Ganga County?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Along with residential plots, Ganga County also offers commercial opportunities including shops linked to Atom City Centre / retail plans. Contact the sales team for availability."
+          }
+        }
+      ]
+    }
+    </script>
+
 </head>
 
 <body>
@@ -273,6 +296,7 @@
                                 <li class="menu-item"><a href="assets/images/ATOM-City-Centre-by-Atomoney.pdf" target="_blank">Commercial</a></li>
                                 <li class="menu-item"><a href="location.html">Location</a></li>
                                 <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                                <li class="menu-item"><a href="blog/">Blog</a></li>
                             </ul>
                         </nav>
                         <!--===  Menu Bottom ===-->
@@ -446,6 +470,51 @@
                 </section>
                 <!--======  End About Section  ======-->
 
+                <section class="seo-content pt-80 pb-40">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <p>Ganga County offers government-approved <strong>ganga county residential plots garhmukteshwar</strong> buyers trust — villa plots near Garh Ganga, Uttar Pradesh. Choose from 150, 225, 300 and 500 Sq.Yd. sizes starting at ₹20,000/Sq.Yd. The gated township combines security, modern amenities and connectivity via NH-9 and the Ganga Expressway — ideal if you want to <a href="contact.html">buy plots in Ganga County</a>.</p>
+                                <h2>Why Invest in Ganga County Residential Plots</h2>
+                                <p>Investors searching for <strong>ganga county residential plots</strong> choose this township for approvals, plot-size flexibility and appreciation potential around Garhmukteshwar. Wide internal roads, gated security and planned retail support long-term livability.</p>
+                                <h2>Plot Sizes &amp; Starting Price</h2>
+                                <p>Explore Ganga County plot options from 150 to 500 Sq.Yd. Pricing starts at ₹20,000/Sq.Yd. Visit the <a href="pricing.html">Ganga County plot price list</a> for current rates and payment plans, then book a site visit.</p>
+                                <h2>Location Advantages in Garhmukteshwar</h2>
+                                <p>Located near Garh Ganga with quick access to Garh town, the railway station, Brij Ghat and the Ganga Expressway — a practical base for families relocating from Delhi-NCR who want <strong>residential plots in Garhmukteshwar</strong>. See <a href="location.html">plots near Garhmukteshwar</a> and the <a href="overview.html">Ganga County plot project</a> overview.</p>
+                                <p>Related: ganga county approved plots · properties in ganga county</p>
+
+                                    <p class="seo-links mt-3">Explore: <a href="pricing.html">Ganga County plot price list</a> · <a href="location.html">plots near Garhmukteshwar</a> · <a href="overview.html">Ganga County plot project</a> · <a href="contact.html">buy plots in Ganga County</a> · <a href="blog/buy-plots-ganga-county-garhmukteshwar.html">Buyer guide blog</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                    <section class="seo-faq pt-60 pb-60">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="section-title mb-40 text-center">
+                                        <h2>Frequently Asked Questions</h2>
+                                    </div>
+                                    <div class="seo-faq-list">
+                                        <h3>Is Ganga County government approved?</h3>
+                                        <p>Yes. Ganga County is a government-approved gated township in Garhmukteshwar offering residential and commercial plots with planned infrastructure.</p>
+                                        <h3>What plot sizes are available at Ganga County?</h3>
+                                        <p>Residential villa plots are available in 150, 225, 300 and 500 Sq.Yd. sizes to suit different budgets and home plans.</p>
+                                        <h3>What is the starting price of Ganga County plots?</h3>
+                                        <p>Plots at Ganga County start from ₹20,000 per Sq.Yd. Check the <a href="pricing.html">Ganga County plot price list</a> for the latest rates and payment plan details.</p>
+                                        <h3>Where is Ganga County located?</h3>
+                                        <p>Ganga County is in Garhmukteshwar, near Garh Ganga, Uttar Pradesh — close to Garh town, the railway station, Brij Ghat and the Ganga Expressway corridor. See <a href="location.html">plots near Garhmukteshwar</a> for connectivity details.</p>
+                                        <h3>Can I buy a commercial plot or shop at Ganga County?</h3>
+                                        <p>Yes. Along with residential plots, Ganga County also offers commercial opportunities including shops linked to Atom City Centre. <a href="contact.html">Buy plots in Ganga County</a> by contacting the sales team.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
                 <!--======  Start Project Section  ======-->
                 <section class="renvia-projects_three pt-120 pb-120">
                     <div class="container-fluid">
@@ -497,6 +566,61 @@
                     </div>
                 </section>
                 <!--======  End Project Section  ======-->
+
+                <!--======  Start Price Revision Notice  ======-->
+                <section class="gc-media-notice pt-80 pb-40">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-10">
+                                <div class="section-title text-center mb-40">
+                                    <span class="sub-title"><img src="assets/images/line1.png" alt="">Price Update<img src="assets/images/line2.png" alt=""></span>
+                                    <h2>Price Revision Coming Soon</h2>
+                                    <p>Invest today at current rates — limited-time opportunity on Ganga County residential plots.</p>
+                                </div>
+                                <div class="gc-media-frame text-center" data-aos="fade-up" data-aos-duration="1000">
+                                    <img src="assets/images/price-revision.jpeg" alt="Ganga County price revision coming soon — luxury residential plots in Garhmukteshwar" class="gc-notice-img">
+                                </div>
+                                <div class="text-center mt-30">
+                                    <a href="pricing.html" class="theme-btn style-one">View Price List<i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <a href="contact.html" class="theme-btn style-one ms-2">Enquire Now<i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--======  End Price Revision Notice  ======-->
+
+                <!--======  Start Udaan Utsav Notice (event promo)  ======-->
+                <section class="gc-media-notice pt-40 pb-80">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-10">
+                                <div class="section-title text-center mb-40">
+                                    <span class="sub-title"><img src="assets/images/line1.png" alt="">Coming Soon<img src="assets/images/line2.png" alt=""></span>
+                                    <h2>Udaan Utsav at Ganga County</h2>
+                                    <p>Kite festival celebrations at Garhmukteshwar — join the fun and stand a chance to win exciting prizes.</p>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6 mb-30" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="gc-media-frame text-center">
+                                            <img src="assets/images/udaan-utsav-kite-festival-coming-soon.jpeg" alt="Udaan Utsav kite festival coming soon at Ganga County Garhmukteshwar" class="gc-notice-img">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-30" data-aos="fade-up" data-aos-duration="1200">
+                                        <div class="gc-media-frame text-center">
+                                            <img src="assets/images/udaan-utsav-iphone-contest-coming-soon.jpeg" alt="Udaan Utsav at Ganga County — chance to win an iPhone, coming soon" class="gc-notice-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-10">
+                                    <a href="contact.html" class="theme-btn style-one">Enquire for Event Details<i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <a href="tel:+919650655124" class="theme-btn style-one ms-2">Call Now<i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--======  End Udaan Utsav Notice  ======-->
 
                 <!--======  Start Pricing Section  ======-->
                 <section class="renvia-pricing-sec">
@@ -605,6 +729,81 @@
                     </div>
                 </section>
                 <!--======  End Pricing Section  ======-->
+
+                <!--======  Start Project Videos Section  ======-->
+                <section class="gc-project-videos pt-100 pb-80">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="section-title text-center mb-50">
+                                    <span class="sub-title"><img src="assets/images/line1.png" alt="">Actual Project Status<img src="assets/images/line2.png" alt=""></span>
+                                    <h2>Project Site Walkthrough Videos</h2>
+                                    <p>See on-ground progress at Ganga County, Garhmukteshwar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 mb-30" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="gc-video-card">
+                                    <video controls playsinline preload="metadata" poster="assets/images/home-one/hero/hero-bg1.jpg">
+                                        <source src="assets/videos/project-site-1.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <p class="gc-video-caption">Ganga County project site — walkthrough 1</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-30" data-aos="fade-up" data-aos-duration="1200">
+                                <div class="gc-video-card">
+                                    <video controls playsinline preload="metadata" poster="assets/images/home-one/hero/hero-bg2.jpg">
+                                        <source src="assets/videos/project-site-2.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <p class="gc-video-caption">Ganga County project site — walkthrough 2</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-30" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="gc-video-card">
+                                    <video controls playsinline preload="metadata" poster="assets/images/home-one/hero/hero-bg3.jpg">
+                                        <source src="assets/videos/project-site-3.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <p class="gc-video-caption">Actual project status — site progress 3</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-30" data-aos="fade-up" data-aos-duration="1200">
+                                <div class="gc-video-card">
+                                    <video controls playsinline preload="metadata" poster="assets/images/home-one/hero/hero-bg1.jpg">
+                                        <source src="assets/videos/project-site-4.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <p class="gc-video-caption">Actual project status — site progress 4</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-30" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="gc-video-card">
+                                    <video controls playsinline preload="metadata" poster="assets/images/home-one/hero/hero-bg2.jpg">
+                                        <source src="assets/videos/project-site-5.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <p class="gc-video-caption">Actual project status — site progress 5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-30" data-aos="fade-up" data-aos-duration="1200">
+                                <div class="gc-video-card">
+                                    <video controls playsinline preload="metadata" poster="assets/images/home-one/hero/hero-bg3.jpg">
+                                        <source src="assets/videos/project-site-6.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <p class="gc-video-caption">Actual project status — site progress 6</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="gallery.html" class="theme-btn style-one">View Full Gallery<i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </section>
+                <!--======  End Project Videos Section  ======-->
 
                 <!--======  Start Counter Section  ======-->
                 <section class="renvia-counter_three pt-115 pb-120"
@@ -1053,12 +1252,18 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
+                            <div class="col-xl-8 col-lg-10 mb-40" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="gc-media-frame text-center">
+                                    <img src="assets/images/government-investment.jpeg" alt="Government investment news for manufacturing and logistics clusters near Ganga Expressway — Hapur and Meerut" class="gc-notice-img">
+                                    <p class="gc-video-caption mt-3">Regional growth news: major investment proposals along the Ganga Expressway corridor strengthen long-term demand around Garhmukteshwar.</p>
+                                </div>
+                            </div>
                             <div class="col-xl-4 col-md-6 col-sm-12">
                                 <!-- Renvia Blog Item -->
                                 <div class="renvia-blog-post-item style-three mb-40" data-aos="fade-up"
                                     data-aos-duration="1000">
                                     <div class="post-thumbnail">
-                                        <img src="assets/images/home-three/blog/blog-img1.jpg" alt="blog grid">
+                                        <img src="assets/images/home-three/blog/blog-img1.jpg" alt="Garhmukteshwar development plan news">
                                     </div>
                                 </div>
                             </div>
@@ -1230,7 +1435,7 @@
                             <div class="col-lg-12">
                                 <!--=== Copyright Text ===-->
                                 <div class="copyright-text text-lg-start text-center">
-                                    <p>Copyright © 2025 Ganga County | All Right Reserved. Designed And Marketed By <a href="https://www.aleczo.com/" target="_blank">Aleczo Media Pvt. Ltd.</a></p>
+                                    <p>Copyright © 2025 Ganga County | All Right Reserved. | <a href="blog/">Blog</a> | <a href="site-map.html">Site Map</a> | <a href="privacy-policy/">Privacy</a> | <a href="terms-and-conditions/">Terms</a> | Designed And Marketed By <a href="https://www.aleczo.com/" target="_blank">Aleczo Media Pvt. Ltd.</a></p>
                                 </div>
                             </div>
                         </div>
@@ -1268,37 +1473,19 @@
             <!-- Popup Overlay -->
             <div id="popup-overlay"></div>
 
-            <!-- Popup Form -->
-            <div id="popup-form" class="gc-popup">
-                <button class="popup-close">&times;</button>
-
-                <div class="gc-popup-header">
-                    <img src="assets/images/home-one/logo/logo-main.png" alt="Ganga County">
-                    <p class="gc-location">Ganga County, Garh Mukteshwar</p>
-                    <div class="gc-price">STARTING PRICE ₹20,000 / SQ.YD.</div>
+            <!-- Event promo popup (like gangacounty.co.in top promo) -->
+            <div id="popup-form" class="gc-popup" role="dialog" aria-modal="true" aria-label="Udaan Utsav coming soon">
+                <button type="button" class="popup-close" aria-label="Close">&times;</button>
+                <div class="gc-popup-promo">
+                    <a href="contact.html">
+                        <img src="assets/images/udaan-utsav-iphone-contest-coming-soon.jpeg" alt="Udaan Utsav at Ganga County Garhmukteshwar — chance to win an iPhone, coming soon">
+                    </a>
+                    <div class="gc-popup-cta">
+                        <a href="tel:+919650655124">Call Now</a>
+                        <a href="contact.html">Enquire Now</a>
+                        <a href="pricing.html">View Price List</a>
+                    </div>
                 </div>
-
-                <form class="gc-popup-body" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-                <input type="hidden" name="subject" value="Ganga County Website Lead">
-                <input type="hidden" name="from_name" value="Ganga County Website">
-                <input type="hidden" name="redirect" value="thank-you.html">
-                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
-
-                    <label>Name*</label>
-                    <input type="text" name="name" placeholder="Your Name" required>
-
-                    <label>Email*</label>
-                    <input type="email" name="email" placeholder="Email Address" required>
-
-                    <label>Mobile Number*</label>
-                    <input type="tel" name="phone" placeholder="Mobile Number" required>
-
-                    <label>Message*</label>
-                    <input type="text" name="message" value="Interested in Site Visit">
-
-                    <button type="submit" class="gc-submit-btn">SUBMIT</button>
-                </form>
             </div>
 
 
@@ -1307,30 +1494,39 @@
                     const popup = document.getElementById('popup-form');
                     const overlay = document.getElementById('popup-overlay');
                     const closeBtn = document.querySelector('.popup-close');
+                    let scheduled = false;
 
                     function showPopup() {
                         popup.style.display = 'block';
                         overlay.style.display = 'block';
+                        document.body.style.overflow = 'hidden';
                     }
 
                     function closePopup() {
                         popup.style.display = 'none';
                         overlay.style.display = 'none';
+                        document.body.style.overflow = '';
                     }
 
-                    // Show popup on every page open (desktop + mobile)
                     function schedulePopup() {
-                        setTimeout(showPopup, 1200);
+                        if (scheduled) return;
+                        scheduled = true;
+                        setTimeout(showPopup, 1000);
                     }
 
                     window.addEventListener('load', schedulePopup);
-                    // Mobile back/forward cache often skips `load`; pageshow covers those visits
                     window.addEventListener('pageshow', function (event) {
-                        if (event.persisted) schedulePopup();
+                        if (event.persisted) {
+                            scheduled = false;
+                            schedulePopup();
+                        }
                     });
 
                     closeBtn.addEventListener('click', closePopup);
                     overlay.addEventListener('click', closePopup);
+                    document.addEventListener('keydown', function (e) {
+                        if (e.key === 'Escape') closePopup();
+                    });
                 })();
             </script>
 
