@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Website Pages -->
   <url>
     <loc>https://gangacounty.com/</loc>
     <lastmod>2026-07-28</lastmod>
@@ -54,12 +55,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+
+  <!-- Blog Index -->
   <url>
     <loc>https://gangacounty.com/blog/</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Existing Blog Pages -->
   <url>
     <loc>https://gangacounty.com/blog/buy-plots-ganga-county-garhmukteshwar.html</loc>
     <lastmod>2026-07-28</lastmod>
@@ -273,6 +278,7 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Legal & Utility Pages -->
   <url>
     <loc>https://gangacounty.com/privacy-policy/</loc>
     <lastmod>2026-07-28</lastmod>
