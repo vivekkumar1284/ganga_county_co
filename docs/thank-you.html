@@ -4,14 +4,17 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Thank You | Ganga County</title>
-  <meta name="robots" content="noindex"/>
+  <meta name="robots" content="noindex, follow"/>
+  <link rel="canonical" href="https://gangacounty.com/thank-you.html"/>
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png"/>
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css"/>
   <link rel="stylesheet" href="assets/css/style.css"/>
   <style>
+    .legal-top { background: #173b2c; padding: 18px 0; }
+    .legal-top a { color: #f89420; text-decoration: none; margin-right: 16px; font-weight: 600; }
     .thank-wrap {
-      min-height: 70vh;
+      min-height: 65vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -20,24 +23,36 @@
     }
     .thank-wrap h1 {
       font-family: "Cal Sans", sans-serif;
+      color: #173b2c;
       margin-bottom: 16px;
+      font-size: 2.5rem;
     }
     .thank-wrap p {
       font-family: "Plus Jakarta Sans", sans-serif;
+      color: #4a5568;
       margin-bottom: 28px;
       max-width: 480px;
       margin-left: auto;
       margin-right: auto;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
-  <div class="thank-wrap">
+  <div class="legal-top">
+    <div class="container">
+      <a href="https://gangacounty.com/">Home</a>
+      <a href="https://gangacounty.com/contact.html">Contact</a>
+      <a href="https://gangacounty.com/blog/">Blog</a>
+    </div>
+  </div>
+
+  <main class="thank-wrap">
     <div>
       <h1>Thank You</h1>
       <p>Your message has been received. Our team will contact you shortly.</p>
-      <a class="theme-btn style-one" href="index.html">Back to Home</a>
+      <a class="theme-btn style-one" href="https://gangacounty.com/">Back to Home</a>
     </div>
-  </div>
+  </main>
 </body>
 </html>
