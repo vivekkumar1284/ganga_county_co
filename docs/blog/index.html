@@ -38,36 +38,120 @@
     <link rel="stylesheet" href="../assets/css/spacings.css"/>
     <link rel="stylesheet" href="../assets/css/style.css"/>
 
-    <!-- Page Specific Styles -->
+    <!-- Page Specific Modern Styling for 3-Column Layout -->
     <style>
-        .blog-index { padding: 80px 0 100px; }
+        .blog-index { 
+            padding: 80px 0 100px; 
+            background-color: #f8faf9;
+        }
+        
         .blog-card {
-            display: block; 
-            background: #fff; 
-            border: 1px solid #e8eee9; 
-            border-radius: 8px;
-            overflow: hidden; 
-            text-decoration: none; 
-            color: inherit; 
+            display: flex;
+            flex-direction: column;
+            background: #ffffff;
+            border: 1px solid rgba(23, 59, 44, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
             height: 100%;
-            transition: box-shadow .25s ease, transform .25s ease; 
-            margin-bottom: 24px;
+            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
         }
-        .blog-card:hover { 
-            box-shadow: 0 16px 40px rgba(0,0,0,.1); 
-            transform: translateY(-3px); 
-            color: inherit; 
+
+        .blog-card:hover {
+            box-shadow: 0 12px 30px rgba(23, 59, 44, 0.12);
+            transform: translateY(-5px);
+            color: inherit;
+            border-color: rgba(23, 59, 44, 0.2);
         }
-        .blog-card img { 
-            width: 100%; 
-            height: 200px; 
-            object-fit: cover; 
-            display: block; 
+
+        .blog-card-img-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 60%; /* Aspect ratio 5:3 */
+            overflow: hidden;
+            background-color: #e8eee9;
         }
-        .blog-card-body { padding: 20px 22px 26px; }
-        .blog-card-body h2 { font-size: 1.25rem; color: #173b2c; margin-bottom: 8px; }
-        .blog-card-body p { color: #555; margin: 0; line-height: 1.65; font-size: .95rem; }
-        .blog-meta { font-size: .82rem; color: #888; margin-bottom: 6px; }
+
+        .blog-card-img-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .blog-card:hover .blog-card-img-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .blog-card-body {
+            padding: 24px 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .blog-meta {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #1a73e8;
+            background: rgba(26, 115, 232, 0.08);
+            padding: 4px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            align-self: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .blog-card-body h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #173b2c;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .blog-card-body p {
+            color: #5d6b64;
+            margin: 0;
+            line-height: 1.6;
+            font-size: 0.9rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        .blog-card-footer {
+            margin-top: auto;
+            padding-top: 12px;
+            border-top: 1px solid #f0f4f1;
+            display: flex;
+            align-items: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #173b2c;
+        }
+
+        .blog-card-footer i {
+            margin-left: 6px;
+            transition: transform 0.2s ease;
+        }
+
+        .blog-card:hover .blog-card-footer i {
+            transform: translateX(4px);
+        }
     </style>
 
     <!-- Structured Data: Blog Hub Schema -->
@@ -103,267 +187,6 @@
     </script>
 </head>
 <body>
-<header class="header-area header-three">
-    <div class="header-navigation"><div class="container-fluid"><div class="primary-menu">
-        <div class="site-branding"><a href="../index.html" class="brand-logo"><img src="../assets/images/home-one/logo/logo-main.png" alt="Ganga County"></a></div>
-        <div class="theme-nav-menu"><nav class="main-menu"><ul>
-            <li class="menu-item"><a href="../index.html">Home</a></li>
-            <li class="menu-item"><a href="../overview.html">Overview</a></li>
-            <li class="menu-item"><a href="../pricing.html">Price List</a></li>
-            <li class="menu-item"><a href="index.html">Blog</a></li>
-            <li class="menu-item"><a href="../contact.html">Contact</a></li>
-        </ul></nav></div>
-        <div class="nav-right-item"><div class="nav-button d-none d-md-block"><a href="tel:+919650655124" class="theme-btn style-one">+91-9650655124</a></div><div class="navbar-toggler"><span></span><span></span><span></span></div></div>
-    </div></div></div>
-</header>
-<div id="smooth-wrapper"><div id="smooth-content"><main>
-<section class="page-hero bg_cover p-r z-1" data-src="../assets/images/innerpage/bg/page-bg.jpg">
-    <div class="container"><div class="row justify-content-center"><div class="col-lg-8"><div class="page-content text-center">
-        <h1>Ganga County Blog</h1>
-        <ul>
-            <li><a href="../index.html">Home</a> <i class="fa-solid fa-arrow-right"></i></li>
-            <li>Blog</li>
-        </ul>
-    </div></div></div></div>
-</section>
-<section class="blog-index"><div class="container">
-    <div class="row justify-content-center mb-40"><div class="col-lg-9 text-center">
-        <p>Long-tail SEO guides for buyers researching <a href="../index.html">Ganga County</a> — without crowding the main homepage.</p>
-    </div></div>
-    <div class="row">
-
-        <!-- Newly Added Blogs -->
-
-        <!-- A. Ganga County Garhmukteshwar Reviews -->
-        <div class="col-md-6">
-            <a class="blog-card" href="ganga-county-garhmukteshwar-reviews.html">
-                <img src="../assets/images/home-one/hero/hero-bg3.jpg" alt="Ganga County Garhmukteshwar Reviews">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Buyer Reviews</div>
-                    <h2>Ganga County Garhmukteshwar — Unbiased Buyer Reviews &amp; Feedback</h2>
-                    <p>What genuine buyers and investors are saying about development speed, location, and potential ROI.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- B. Best Places To Buy Property Near Ganga Expressway 2026 -->
-        <div class="col-md-6">
-            <a class="blog-card" href="best-places-to-buy-property-near-ganga-expressway-2026.html">
-                <img src="../assets/images/government-investment.jpeg" alt="Best Places To Buy Property Near Ganga Expressway 2026">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Expressway 2026</div>
-                    <h2>Best Places To Buy Property Near Ganga Expressway 2026</h2>
-                    <p>Top investment locations and corridor analysis along the upcoming expressway route for maximum appreciation.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- C. Blog Garhmukteshwar Vs Greater Noida Real Estate -->
-        <div class="col-md-6">
-            <a class="blog-card" href="blog-garhmukteshwar-vs-greater-noida-real-estate.html">
-                <img src="../assets/images/government-investment.jpeg" alt="Garhmukteshwar Vs Greater Noida Real Estate">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Comparative Study</div>
-                    <h2>Garhmukteshwar vs Greater Noida Real Estate Investment</h2>
-                    <p>Comparing entry pricing, capital growth potential, and lifestyle benefits between Greater Noida and Garhmukteshwar.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- D. Brijghat Property Guide Second Home -->
-        <div class="col-md-6">
-            <a class="blog-card" href="brijghat-property-guide-second-home.html">
-                <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Brijghat Property Guide Second Home">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Second Home Guide</div>
-                    <h2>Brijghat Property Guide: Building Your Dream Second Home</h2>
-                    <p>Everything you need to know about purchasing land and building weekend retreats near the sacred Brijghat banks.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- E. Garhmukteshwar Property Guide 2026 Best Areas -->
-        <div class="col-md-6">
-            <a class="blog-card" href="garhmukteshwar-property-guide-2026-best-areas.html">
-                <img src="../assets/images/home-one/hero/hero-bg1.jpg" alt="Garhmukteshwar Property Guide 2026 Best Areas">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Area Guide 2026</div>
-                    <h2>Garhmukteshwar Property Guide 2026: Best Areas to Invest</h2>
-                    <p>A comprehensive breakdown of top residential zones, infrastructure upgrades, and emerging land hubs in Garhmukteshwar.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- F. Garhmukteshwar Property Investment Guide 2026 -->
-        <div class="col-md-6">
-            <a class="blog-card" href="garhmukteshwar-property-investment-guide-2026.html">
-                <img src="../assets/images/government-investment.jpeg" alt="Garhmukteshwar Property Investment Guide 2026">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Investment 2026</div>
-                    <h2>Garhmukteshwar Property Investment Guide 2026</h2>
-                    <p>Strategic insights for real estate investors looking at high-yield land opportunities, legal safety, and growth forecasts.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- G. Garhmukteshwar Vs Meerut Property Investment 2026 -->
-        <div class="col-md-6">
-            <a class="blog-card" href="garhmukteshwar-vs-meerut-property-investment-2026.html">
-                <img src="../assets/images/government-investment.jpeg" alt="Garhmukteshwar Vs Meerut Property Investment 2026">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Market Analysis</div>
-                    <h2>Garhmukteshwar vs Meerut Property Investment 2026</h2>
-                    <p>An objective comparison of land values, urban expansion, and connectivity between Meerut and Garhmukteshwar.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- H. How To Choose Right Plot Size Weekend Home Garhmukteshwar -->
-        <div class="col-md-6">
-            <a class="blog-card" href="how-to-choose-right-plot-size-weekend-home-garhmukteshwar.html">
-                <img src="../assets/images/home-one/hero/hero-bg3.jpg" alt="How To Choose Right Plot Size Weekend Home Garhmukteshwar">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Buyer Advice</div>
-                    <h2>How to Choose the Right Plot Size for a Weekend Home</h2>
-                    <p>Practical guidance on selecting ideal square yard dimensions based on family needs, landscaping, and budget.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- I. Living Near The Ganga Benefits Garhmukteshwar -->
-        <div class="col-md-6">
-            <a class="blog-card" href="living-near-the-ganga-benefits-garhmukteshwar.html">
-                <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Living Near The Ganga Benefits Garhmukteshwar">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Lifestyle Benefits</div>
-                    <h2>Living Near the Ganga: Health &amp; Lifestyle Benefits</h2>
-                    <p>Explore the spiritual serenity, clean air advantages, and holistic wellness of residing close to the holy river.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- J. Things To Do In Garhmukteshwar Weekend Guide -->
-        <div class="col-md-6">
-            <a class="blog-card" href="things-to-do-in-garhmukteshwar-weekend-guide.html">
-                <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Things To Do In Garhmukteshwar Weekend Guide">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Weekend Guide</div>
-                    <h2>Things to Do in Garhmukteshwar: Ultimate Weekend Guide</h2>
-                    <p>Discover local attractions, ghat visits, boating, local cuisine, and spiritual spots for your weekend getaways.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- K. What To Check Before Buying Residential Plot In Uttar Pradesh -->
-        <div class="col-md-6">
-            <a class="blog-card" href="what-to-check-before-buying-residential-plot-in-uttar-pradesh.html">
-                <img src="../assets/images/home-three/bg/make-bg.jpg" alt="What To Check Before Buying Residential Plot In Uttar Pradesh">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Legal &amp; Safety</div>
-                    <h2>What to Check Before Buying a Residential Plot in Uttar Pradesh</h2>
-                    <p>Essential legal checklist covering title verification, land use conversion, encumbrance certificates, and RERA compliance.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- Existing Blogs -->
-
-        <!-- 1. Atom City Centre Shops -->
-        <div class="col-md-6">
-            <a class="blog-card" href="atom-city-centre-shops-garhmukteshwar.html">
-                <img src="../assets/images/home-one/hero/hero-bg2.jpg" alt="Atom City Centre Shops Garhmukteshwar">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Commercial</div>
-                    <h2>Atom City Centre Shops Garhmukteshwar</h2>
-                    <p>Commercial shops and retail spaces tied to Ganga County — who should evaluate and how to enquire.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- 2. Better Investment Near Delhi NCR 2026 -->
-        <div class="col-md-6">
-            <a class="blog-card" href="better-investment-near-delhi-ncr-2026.html">
-                <img src="../assets/images/government-investment.jpeg" alt="Better Investment Near Delhi NCR 2026">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Investment 2026</div>
-                    <h2>Better Investment Opportunities Near Delhi NCR in 2026</h2>
-                    <p>Analysis of emerging growth corridors, expressway connectivity, and land asset appreciation.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- 3. Buy Plots Ganga County Garhmukteshwar -->
-        <div class="col-md-6">
-            <a class="blog-card" href="buy-plots-ganga-county-garhmukteshwar.html">
-                <img src="../assets/images/home-one/hero/hero-bg1.jpg" alt="Buy Plots in Ganga County Garhmukteshwar">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Complete Buyer Guide</div>
-                    <h2>Buy Plots in Ganga County Garhmukteshwar — 2026 Guide</h2>
-                    <p>Core overview of sizes, price, location, amenities and how to enquire on gangacounty.com.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- 4. Day in the Life Living at Ganga County -->
-        <div class="col-md-6">
-            <a class="blog-card" href="day-in-the-life-living-at-ganga-county.html">
-                <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="A Day in the Life Living at Ganga County">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Lifestyle &amp; Community</div>
-                    <h2>A Day in the Life Living at Ganga County Garhmukteshwar</h2>
-                    <p>Experience peaceful morning walks, club amenities, secure environment, and riverfront serenity.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- 5. Eco-Friendly Gated Township Living -->
-        <div class="col-md-6">
-            <a class="blog-card" href="eco-friendly-gated-township-living-garhmukteshwar.html">
-                <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Eco-Friendly Gated Township Living">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Green Living</div>
-                    <h2>Eco-Friendly Gated Township Living in Garhmukteshwar</h2>
-                    <p>Discover sustainable planning, lush green parks, clean air, and eco-conscious township features.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- 6. Farmhouse Plots Near Ganga River -->
-        <div class="col-md-6">
-            <a class="blog-card" href="farmhouse-plots-near-ganga-river.html">
-                <img src="../assets/images/price-revision.jpeg" alt="Farmhouse Plots Near Ganga River">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Farmhouses</div>
-                    <h2>Farmhouse Plots Near Ganga River — Luxury Living Guide</h2>
-                    <p>Gateway to custom weekend retreats, wellness living, and high-ROI land plots in Garhmukteshwar.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- 7. Full Price and Payment Plan Guide 2026 -->
-        <div class="col-md-6">
-            <a class="blog-card" href="full-price-and-payment-plan-guide-2026.html">
-                <img src="../assets/images/price-revision.jpeg" alt="Full Price and Payment Plan Guide 2026">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Price &amp; Payment</div>
-                    <h2>Full Price &amp; Payment Plan Guide 2026</h2>
-                    <p>Comprehensive pricing breakdown, installment structure, registration costs, and payment milestones.</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- 8. Price Review Investment Hindi -->
-        <div class="col-md-6">
-            <a class="blog-card" href="ganga-county-garhmukteshwar-price-review-investment-hindi.html">
-                <img src="../assets/images/government-investment.jpeg" alt="Ganga County Garhmukteshwar Price Review Investment Hindi">
-                <div class="blog-card-body">
-                    <div class="blog-meta">Hindi Guide · समीक्षा</div>
-                    <h2>Ganga County गढ़मुक्तेश्वर — प्लॉट प्राइस एवं इन्वेस्टमेन्ट समीक्षा</h2>
-                    <p>गंगा काउंटी गढ़मुक्तेश्वर में प्लॉट की कीमत, लोकेशन के फायदे और 2026 निवेश संभावनाओं की पूरी जानकारी।</p>
-                </div>
-            </a>
-        </div>
-
 <header class="header-area header-three">
     <div class="header-navigation">
         <div class="container-fluid">
@@ -418,435 +241,858 @@
             <!-- Blog Index Grid -->
             <section class="blog-index">
                 <div class="container">
-                    <div class="row justify-content-center mb-40">
-                        <div class="col-lg-9 text-center">
-                            <p>Long-tail SEO guides for buyers researching <a href="../index.html">Ganga County</a> — without crowding the main homepage.</p>
+                    <div class="row justify-content-center mb-50">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="mb-15" style="color: #173b2c; font-weight: 700;">Latest News &amp; Articles</h2>
+                            <p class="lead">Explore expert guides and real estate updates on Ganga County plot prices, infrastructure, and investment opportunities in Garhmukteshwar.</p>
                         </div>
                     </div>
                     
-                    <div class="row">
+                    <!-- 3-Column Cards Layout (g-4 ensures uniform gaps) -->
+                    <div class="row g-4">
                         <!-- 1. Atom City Centre Shops -->
-                        <div class="col-md-6">
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="atom-city-centre-shops-garhmukteshwar.html">
-                                <img src="../assets/images/home-one/hero/hero-bg2.jpg" alt="Atom City Centre Shops Garhmukteshwar">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg2.jpg" alt="Atom City Centre Shops Garhmukteshwar" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Commercial</div>
                                     <h2>Atom City Centre Shops Garhmukteshwar</h2>
                                     <p>Commercial shops and retail spaces tied to Ganga County — who should evaluate and how to enquire.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 2. Better Investment Near Delhi NCR 2026 -->
-                        <div class="col-md-6">
+                        <!-- 2. Best Places To Buy Property Near Ganga Expressway 2026 -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="best-places-to-buy-property-near-ganga-expressway-2026.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Best Places To Buy Property Near Ganga Expressway 2026" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Expressway 2026</div>
+                                    <h2>Best Places To Buy Property Near Ganga Expressway 2026</h2>
+                                    <p>Top investment locations and corridor analysis along the upcoming expressway route for maximum appreciation.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 3. Best Plots for Retirement Homes near the Ganga in Garhmukteshwar -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="best-plots-for-retirement-homes-near-the-ganga-in-garhmukteshwar.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Best Plots for Retirement Homes near the Ganga in Garhmukteshwar" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Retirement Living</div>
+                                    <h2>Best Plots for Retirement Homes Near the Ganga</h2>
+                                    <p>Find peaceful, green, and secure plots near Garhmukteshwar for ideal retirement living.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 4. Better Investment Near Delhi NCR 2026 -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="better-investment-near-delhi-ncr-2026.html">
-                                <img src="../assets/images/government-investment.jpeg" alt="Better Investment Near Delhi NCR 2026">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Better Investment Near Delhi NCR 2026" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Investment 2026</div>
                                     <h2>Better Investment Opportunities Near Delhi NCR in 2026</h2>
                                     <p>Analysis of emerging growth corridors, expressway connectivity, and land asset appreciation.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 3. Buy Plots Ganga County Garhmukteshwar -->
-                        <div class="col-md-6">
-                            <a class="blog-card" href="buy-plots-ganga-county-garhmukteshwar.html">
-                                <img src="../assets/images/home-one/hero/hero-bg1.jpg" alt="Buy Plots in Ganga County Garhmukteshwar">
+                        <!-- 5. Garhmukteshwar vs Greater Noida Real Estate -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="blog-garhmukteshwar-vs-greater-noida-real-estate.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Garhmukteshwar Vs Greater Noida Real Estate" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
-                                    <div class="blog-meta">Complete Buyer Guide</div>
+                                    <div class="blog-meta">Comparative Study</div>
+                                    <h2>Garhmukteshwar vs Greater Noida Real Estate Investment</h2>
+                                    <p>Comparing entry pricing, capital growth potential, and lifestyle benefits between Greater Noida and Garhmukteshwar.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 6. Brijghat Property Guide Second Home -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="brijghat-property-guide-second-home.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Brijghat Property Guide Second Home" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Second Home Guide</div>
+                                    <h2>Brijghat Property Guide: Building Your Dream Second Home</h2>
+                                    <p>Everything you need to know about purchasing land and building weekend retreats near the sacred Brijghat banks.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 7. Buy Plots Ganga County Garhmukteshwar -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="buy-plots-ganga-county-garhmukteshwar.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg1.jpg" alt="Buy Plots in Ganga County Garhmukteshwar" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Buyer Guide</div>
                                     <h2>Buy Plots in Ganga County Garhmukteshwar — 2026 Guide</h2>
                                     <p>Core overview of sizes, price, location, amenities and how to enquire on gangacounty.com.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 4. Day in the Life Living at Ganga County -->
-                        <div class="col-md-6">
+                        <!-- 8. Day in the Life Living at Ganga County -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="day-in-the-life-living-at-ganga-county.html">
-                                <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="A Day in the Life Living at Ganga County">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="A Day in the Life Living at Ganga County" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Lifestyle &amp; Community</div>
                                     <h2>A Day in the Life Living at Ganga County Garhmukteshwar</h2>
                                     <p>Experience peaceful morning walks, club amenities, secure environment, and riverfront serenity.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 5. Eco-Friendly Gated Township Living -->
-                        <div class="col-md-6">
+                        <!-- 9. Eco-Friendly Gated Township Living -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="eco-friendly-gated-township-living-garhmukteshwar.html">
-                                <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Eco-Friendly Gated Township Living">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Eco-Friendly Gated Township Living" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Green Living</div>
                                     <h2>Eco-Friendly Gated Township Living in Garhmukteshwar</h2>
                                     <p>Discover sustainable planning, lush green parks, clean air, and eco-conscious township features.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 6. Farmhouse Plots Near Ganga River -->
-                        <div class="col-md-6">
+                        <!-- 10. Farmhouse Plots Near Ganga River -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="farmhouse-plots-near-ganga-river.html">
-                                <img src="../assets/images/price-revision.jpeg" alt="Farmhouse Plots Near Ganga River">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/price-revision.jpeg" alt="Farmhouse Plots Near Ganga River" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Farmhouses</div>
                                     <h2>Farmhouse Plots Near Ganga River — Luxury Living Guide</h2>
                                     <p>Gateway to custom weekend retreats, wellness living, and high-ROI land plots in Garhmukteshwar.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 7. Full Price and Payment Plan Guide 2026 -->
-                        <div class="col-md-6">
+                        <!-- 11. Full Price and Payment Plan Guide 2026 -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="full-price-and-payment-plan-guide-2026.html">
-                                <img src="../assets/images/price-revision.jpeg" alt="Full Price and Payment Plan Guide 2026">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/price-revision.jpeg" alt="Full Price and Payment Plan Guide 2026" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Price &amp; Payment</div>
                                     <h2>Full Price &amp; Payment Plan Guide 2026</h2>
                                     <p>Comprehensive pricing breakdown, installment structure, registration costs, and payment milestones.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 8. Price Review Investment Hindi -->
-                        <div class="col-md-6">
+                        <!-- 12. Ganga County Garhmukteshwar Price Review Investment Hindi -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="ganga-county-garhmukteshwar-price-review-investment-hindi.html">
-                                <img src="../assets/images/government-investment.jpeg" alt="Ganga County Garhmukteshwar Price Review Investment Hindi">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Ganga County Garhmukteshwar Price Review Investment Hindi" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Hindi Guide · समीक्षा</div>
                                     <h2>Ganga County गढ़मुक्तेश्वर — प्लॉट प्राइस एवं इन्वेस्टमेन्ट समीक्षा</h2>
                                     <p>गंगा काउंटी गढ़मुक्तेश्वर में प्लॉट की कीमत, लोकेशन के फायदे और 2026 निवेश संभावनाओं की पूरी जानकारी।</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 9. Ganga County Garhmukteshwar Reviews -->
-                        <div class="col-md-6">
+                        <!-- 13. Ganga County Garhmukteshwar Reviews -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="ganga-county-garhmukteshwar-reviews.html">
-                                <img src="../assets/images/home-one/hero/hero-bg3.jpg" alt="Ganga County Garhmukteshwar Reviews">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg3.jpg" alt="Ganga County Garhmukteshwar Reviews" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Buyer Reviews</div>
                                     <h2>Ganga County Garhmukteshwar — Unbiased Buyer Reviews &amp; Feedback</h2>
                                     <p>What genuine buyers and investors are saying about development speed, location, and potential ROI.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 10. Integrated Township Delhi NCR -->
-                        <div class="col-md-6">
+                        <!-- 14. Integrated Township Delhi NCR -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="ganga-county-integrated-township-delhi-ncr.html">
-                                <img src="../assets/images/government-investment.jpeg" alt="Integrated Township Near Delhi NCR">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Integrated Township Near Delhi NCR" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Delhi NCR / Township</div>
                                     <h2>Integrated Township Near Delhi NCR</h2>
                                     <p>60-acre gated township details, plots near Delhi NCR, Ganga Ji, and Hapur connectivity.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 11. Master Plan and Investment Potential 2026 -->
-                        <div class="col-md-6">
+                        <!-- 15. Master Plan and Investment Potential 2026 -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="ganga-county-master-plan-and-investment-potential-2026.html">
-                                <img src="../assets/images/home-one/hero/hero-bg1.jpg" alt="Ganga County Master Plan and Investment Potential 2026">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg1.jpg" alt="Ganga County Master Plan and Investment Potential 2026" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Master Plan 2026</div>
                                     <h2>Ganga County Master Plan &amp; Investment Potential 2026</h2>
                                     <p>In-depth layout review, road width specifications, commercial zones, and long-term land appreciation.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 12. Plot Cost & EOI Explained -->
-                        <div class="col-md-6">
+                        <!-- 16. Plot Cost & EOI Explained -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="ganga-county-plot-cost-eoi-explained.html">
-                                <img src="../assets/images/price-revision.jpeg" alt="Plot Cost Estimate and EOI Explained">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/price-revision.jpeg" alt="Plot Cost Estimate and EOI Explained" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Cost / EOI</div>
                                     <h2>Plot Cost Estimate &amp; EOI Explained</h2>
                                     <p>Illustrative ₹20,000/Sq.Yd. math, Expression of Interest (EOI) vs booking, and price-revision watch.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 13. Price Revision Alert -->
-                        <div class="col-md-6">
+                        <!-- 17. Price Revision Alert -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="ganga-county-price-revision.html">
-                                <img src="../assets/images/price-revision.jpeg" alt="Ganga County Price Revision Alert">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/price-revision.jpeg" alt="Ganga County Price Revision Alert" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Price Update</div>
                                     <h2>Ganga County Plot Price Revision &amp; Rate Alert</h2>
                                     <p>Important update on plot price revisions, high market demand, and early booking advantages.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 14. Site Visit Checklist Delhi NCR -->
-                        <div class="col-md-6">
+                        <!-- 18. Site Visit Checklist Delhi NCR -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="ganga-county-site-visit-checklist-delhi-ncr.html">
-                                <img src="../assets/images/home-one/hero/hero-bg3.jpg" alt="Site Visit Checklist from Delhi NCR">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg3.jpg" alt="Site Visit Checklist from Delhi NCR" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Site Visit</div>
                                     <h2>Site Visit Checklist from Delhi NCR</h2>
                                     <p>What to inspect on site, documents to ask, and booking steps from Noida / Delhi via NH-9.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 15. Villa Plots Price & Payment Plan -->
-                        <div class="col-md-6">
+                        <!-- 19. Villa Plots Price & Payment Plan -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="ganga-county-villa-plots-price-payment-plan.html">
-                                <img src="../assets/images/price-revision.jpeg" alt="Villa Plots Price and Payment Plan">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/price-revision.jpeg" alt="Villa Plots Price and Payment Plan" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Price / Payment</div>
                                     <h2>Villa Plots Price &amp; Down Payment Plan</h2>
                                     <p>Starting ₹20,000/Sq.Yd., 183 Sq.Yd. plot sizes, EMI options, and e-brochure details.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 16. Ganga County vs Nearby Projects -->
-                        <div class="col-md-6">
+                        <!-- 20. Ganga County vs Nearby Projects -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="ganga-county-vs-nearby-projects.html">
-                                <img src="../assets/images/government-investment.jpeg" alt="Ganga County vs Nearby Projects">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Ganga County vs Nearby Projects" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Comparative Study</div>
                                     <h2>Ganga County vs Nearby Projects in Garhmukteshwar</h2>
                                     <p>Detailed comparison of pricing, developer credibility, road infrastructure, and gated amenities.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 17. Ganga Expressway Progress Update 2026 -->
-                        <div class="col-md-6">
+                        <!-- 21. Ganga Expressway Progress Update 2026 -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="ganga-expressway-progress-update-2026.html">
-                                <img src="../assets/images/home-one/hero/hero-bg1.jpg" alt="Ganga Expressway Progress Update 2026">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg1.jpg" alt="Ganga Expressway Progress Update 2026" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Infrastructure</div>
                                     <h2>Ganga Expressway Progress Update 2026</h2>
                                     <p>Latest construction status, travel time reduction, and real estate growth impact on Garhmukteshwar.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 18. Official Website Review -->
-                        <div class="col-md-6">
+                        <!-- 22. Ganga Expressway Route Map 2026 Garhmukteshwar Delhi NCR -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="ganga-expressway-route-map-2026-garhmukteshwar-delhi-ncr.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Ganga Expressway Route Map 2026 Garhmukteshwar Delhi NCR" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Route &amp; Map</div>
+                                    <h2>Ganga Expressway Route Map 2026 &amp; Delhi NCR Connectivity</h2>
+                                    <p>Detailed corridor map, key entry/exit nodes, and travel times connecting Garhmukteshwar to major hubs.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 23. Official Website Review -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="gangacounty-com-official-website-review.html">
-                                <img src="../assets/images/home-one/hero/hero-bg2.jpg" alt="GangaCounty.com Official Website Review">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg2.jpg" alt="GangaCounty.com Official Website Review" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Digital Resource</div>
                                     <h2>gangacounty.com Official Website Guide &amp; Online Booking</h2>
                                     <p>How to navigate official land details, download e-brochures, check price lists, and request site visits.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 19. Garhmukteshwar Real Estate Price Trends 2026 -->
-                        <div class="col-md-6">
+                        <!-- 24. Garhmukteshwar Property Guide 2026 Best Areas -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="garhmukteshwar-property-guide-2026-best-areas.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg1.jpg" alt="Garhmukteshwar Property Guide 2026 Best Areas" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Area Guide 2026</div>
+                                    <h2>Garhmukteshwar Property Guide 2026: Best Areas to Invest</h2>
+                                    <p>A comprehensive breakdown of top residential zones, infrastructure upgrades, and emerging land hubs in Garhmukteshwar.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 25. Garhmukteshwar Property Investment Guide 2026 -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="garhmukteshwar-property-investment-guide-2026.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Garhmukteshwar Property Investment Guide 2026" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Investment 2026</div>
+                                    <h2>Garhmukteshwar Property Investment Guide 2026</h2>
+                                    <p>Strategic insights for real estate investors looking at high-yield land opportunities, legal safety, and growth forecasts.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 26. Garhmukteshwar Real Estate Price Trends 2026 -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="garhmukteshwar-real-estate-price-trends-2026.html">
-                                <img src="../assets/images/government-investment.jpeg" alt="Garhmukteshwar Real Estate Price Trends 2026">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Garhmukteshwar Real Estate Price Trends 2026" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Market Trends</div>
                                     <h2>Garhmukteshwar Real Estate Price Trends 2026</h2>
                                     <p>In-depth analysis of property price appreciation, land demand, and future growth forecast.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 20. Gated Community Plots Garhmukteshwar Hapur -->
-                        <div class="col-md-6">
+                        <!-- 27. Garhmukteshwar Vs Meerut Property Investment 2026 -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="garhmukteshwar-vs-meerut-property-investment-2026.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Garhmukteshwar Vs Meerut Property Investment 2026" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Market Analysis</div>
+                                    <h2>Garhmukteshwar vs Meerut Property Investment 2026</h2>
+                                    <p>An objective comparison of land values, urban expansion, and connectivity between Meerut and Garhmukteshwar.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 28. Gated Community Plots Garhmukteshwar Hapur -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="gated-community-plots-garhmukteshwar-hapur.html">
-                                <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Gated Community Plots in Garhmukteshwar">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Gated Community Plots in Garhmukteshwar" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Amenities / Lifestyle</div>
                                     <h2>Gated Community Plots in Garhmukteshwar</h2>
                                     <p>24/7 security, clubhouse, shopping complex, yoga deck, temple &amp; musical fountain features.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 21. Guide Buying Land Uttar Pradesh First Time Buyers -->
-                        <div class="col-md-6">
+                        <!-- 29. Gated Township vs Open Plot Garhmukteshwar -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="gated-township-vs-open-plot-garhmukteshwar.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Gated Township vs Open Plot Garhmukteshwar" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Plot Selection</div>
+                                    <h2>Gated Township vs Open Plot in Garhmukteshwar</h2>
+                                    <p>Understanding security, road quality, maintenance, and long-term resale value differences.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 30. Guide Buying Land Uttar Pradesh First Time Buyers -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="guide-buying-land-uttar-pradesh-first-time-buyers.html">
-                                <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Guide to Buying Land in Uttar Pradesh">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Guide to Buying Land in Uttar Pradesh" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Buyer Guide</div>
                                     <h2>Guide to Buying Land in Uttar Pradesh for First-Time Buyers</h2>
                                     <p>Step-by-step land purchase process, registry checklist, 143 conversion, and legal safety tips.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 22. Home Loan & EMI Guide -->
-                        <div class="col-md-6">
+                        <!-- 31. Home Loan & EMI Guide -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="home-loan-emi-guide-buying-plot-ganga-county.html">
-                                <img src="../assets/images/price-revision.jpeg" alt="Home Loan and EMI Guide Ganga County">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/price-revision.jpeg" alt="Home Loan and EMI Guide Ganga County" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Finance &amp; Loan</div>
                                     <h2>Home Loan &amp; EMI Guide for Buying Plots at Ganga County</h2>
                                     <p>Loan eligibility, down payment structure, bank approvals, and EMI calculation examples.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 23. Inside Ganga County Gated Township -->
-                        <div class="col-md-6">
+                        <!-- 32. How To Choose Right Plot Size Weekend Home Garhmukteshwar -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="how-to-choose-right-plot-size-weekend-home-garhmukteshwar.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg3.jpg" alt="How To Choose Right Plot Size Weekend Home Garhmukteshwar" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Buyer Advice</div>
+                                    <h2>How to Choose the Right Plot Size for a Weekend Home</h2>
+                                    <p>Practical guidance on selecting ideal square yard dimensions based on family needs, landscaping, and budget.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 33. Inside Ganga County Gated Township -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="inside-ganga-county-gated-township-garhmukteshwar.html">
-                                <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Inside Ganga County Gated Township">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Inside Ganga County Gated Township" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Township Overview</div>
                                     <h2>Inside Ganga County Gated Township Garhmukteshwar</h2>
                                     <p>A deep dive into wide internal roads, street lighting, landscape parks, and community infrastructure.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 24. Invest Near Brij Ghat & Ganga Ji -->
-                        <div class="col-md-6">
+                        <!-- 34. Invest Near Brij Ghat & Ganga Ji -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="invest-garhmukteshwar-plots-near-brij-ghat.html">
-                                <img src="../assets/images/government-investment.jpeg" alt="Invest near Brij Ghat Garhmukteshwar">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Invest near Brij Ghat Garhmukteshwar" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Investment / Area</div>
                                     <h2>Invest Near Brij Ghat &amp; Ganga Ji</h2>
                                     <p>Why Garhmukteshwar plots attract Delhi-NCR investors — spiritual town + infrastructure thesis.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 25. Is Buying Land Safe Garhmukteshwar -->
-                        <div class="col-md-6">
+                        <!-- 35. Is Buying Land Safe Garhmukteshwar -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="is-buying-land-safe-garhmukteshwar.html">
-                                <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Is Buying Land Safe in Garhmukteshwar">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Is Buying Land Safe in Garhmukteshwar" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Legal &amp; Safety</div>
                                     <h2>Is Buying Land Safe in Garhmukteshwar? Legal Checklist</h2>
                                     <p>Essential safety guidelines, title check verification, and gated township compliance standards.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 26. Is Now the Right Time to Buy in Garhmukteshwar -->
-                        <div class="col-md-6">
+                        <!-- 36. Is Ganga County RERA Approved Legal Status Approvals Explained 2026 -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="is-ganga-county-rera-approved-legal-status-approvals-explained-2026.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Is Ganga County RERA Approved Legal Status Approvals Explained 2026" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">RERA &amp; Approvals</div>
+                                    <h2>Is Ganga County RERA Approved? Legal Status Explained</h2>
+                                    <p>Clear details on project registration, legal compliance, title deeds, and development permissions for 2026.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 37. Is Now the Right Time to Buy in Garhmukteshwar -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="is-now-the-right-time-to-buy-in-garhmukteshwar.html">
-                                <img src="../assets/images/government-investment.jpeg" alt="Is Now the Right Time to Buy in Garhmukteshwar">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Is Now the Right Time to Buy in Garhmukteshwar" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Market Analysis</div>
                                     <h2>Is Now the Right Time to Buy Property in Garhmukteshwar?</h2>
                                     <p>Evaluating upcoming highway developments, entry price points, and future rate projections.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 27. Legal RERA and Approvals -->
-                        <div class="col-md-6">
+                        <!-- 38. Khatauni Khasra Land Records UP Plot Ownership Verification -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="khatauni-khasra-land-records-up-plot-ownership-verification.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Khatauni Khasra Land Records UP Plot Ownership Verification" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Land Records</div>
+                                    <h2>Understanding Khatauni &amp; Khasra Land Records in UP</h2>
+                                    <p>How to verify plot ownership, Bhulekh UP online records, and registry titles before investing.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 39. Legal RERA and Approvals -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="legal-rera-and-approvals.html">
-                                <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Legal RERA and Approvals">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Legal RERA and Approvals" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Legal Compliance</div>
                                     <h2>Legal Compliance, RERA &amp; Approvals for Ganga County</h2>
                                     <p>Verification of title deeds, land conversion status, layout approvals, and legal safety standards.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 28. Lifestyle Weekend Home Plots Garhmukteshwar -->
-                        <div class="col-md-6">
+                        <!-- 40. Lifestyle Weekend Home Plots Garhmukteshwar -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="lifestyle-weekend-home-plots-garhmukteshwar.html">
-                                <img src="../assets/images/home-one/hero/hero-bg3.jpg" alt="Lifestyle &amp; Weekend Home Plots">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg3.jpg" alt="Lifestyle &amp; Weekend Home Plots" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Weekend Homes</div>
                                     <h2>Lifestyle &amp; Weekend Home Plots in Garhmukteshwar</h2>
                                     <p>Build your private getaway close to Delhi NCR away from pollution and urban congestion.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 29. Plots Near Jewar Airport & Ganga Expressway -->
-                        <div class="col-md-6">
+                        <!-- 41. Living Near The Ganga Benefits Garhmukteshwar -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="living-near-the-ganga-benefits-garhmukteshwar.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Living Near The Ganga Benefits Garhmukteshwar" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Lifestyle Benefits</div>
+                                    <h2>Living Near the Ganga: Health &amp; Lifestyle Benefits</h2>
+                                    <p>Explore the spiritual serenity, clean air advantages, and holistic wellness of residing close to the holy river.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 42. Plot Loan Eligibility Documents Ganga County -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="plot-loan-eligibility-documents-ganga-county.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/price-revision.jpeg" alt="Plot Loan Eligibility Documents Ganga County" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Financing Guide</div>
+                                    <h2>Plot Loan Eligibility &amp; Required Documents</h2>
+                                    <p>Comprehensive guide to bank approvals, income eligibility criteria, and documentation required for plot loans.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 43. Plots Near Jewar Airport & Ganga Expressway -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="plots-near-jewar-airport-ganga-expressway.html">
-                                <img src="../assets/images/government-investment.jpeg" alt="Plots Near Jewar Airport &amp; Ganga Expressway">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Plots Near Jewar Airport &amp; Ganga Expressway" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Megaproject Corridor</div>
                                     <h2>Plots Near Jewar Airport &amp; Ganga Expressway Corridor</h2>
                                     <p>Analyzing the combined growth potential of Noida International Airport and Ganga Expressway connectivity.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 30. Residential Plots Garhmukteshwar -->
-                        <div class="col-md-6">
+                        <!-- 44. Plots vs Mutual Funds vs Gold Land Near Ganga Expressway 2026 -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="plots-vs-mutual-funds-vs-gold-land-near-ganga-expressway-2026.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Plots vs Mutual Funds vs Gold Land Near Ganga Expressway 2026" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Asset Comparison</div>
+                                    <h2>Plots vs Mutual Funds vs Gold: Investment Comparison 2026</h2>
+                                    <p>Evaluating long-term returns, volatility, and inflation hedging between land, equity funds, and gold.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 45. Resale Value Plots Ganga County Investor Guide -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="resale-value-plots-ganga-county-investor-guide.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/price-revision.jpeg" alt="Resale Value Plots Ganga County Investor Guide" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Investor Guide</div>
+                                    <h2>Resale Value &amp; Exit Strategy for Ganga County Plots</h2>
+                                    <p>Market liquidity, capital appreciation projections, and key exit triggers for investors.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 46. Residential Plots Garhmukteshwar -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="residential-plots-garhmukteshwar.html">
-                                <img src="../assets/images/home-one/hero/hero-bg1.jpg" alt="Residential Plots Garhmukteshwar">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg1.jpg" alt="Residential Plots Garhmukteshwar" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Residential Land</div>
                                     <h2>Residential Plots in Garhmukteshwar — Premium Options</h2>
                                     <p>Explore plot sizes from 100 Sq.Yd. to 500 Sq.Yd. suited for home construction and long-term holding.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 31. Township Development Garhmukteshwar Ganga County -->
-                        <div class="col-md-6">
+                        <!-- 47. Stamp Duty Registration Charges Plots UP Ganga County Guide -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="stamp-duty-registration-charges-plots-uttar-pradesh-ganga-county-guide.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/price-revision.jpeg" alt="Stamp Duty Registration Charges Plots Uttar Pradesh Ganga County Guide" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Registry &amp; Fees</div>
+                                    <h2>Stamp Duty &amp; Registration Charges in UP Explained</h2>
+                                    <p>Calculation rules, female concessions, circle rates, and breakdown of fees during land registration.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 48. Things To Do In Garhmukteshwar Weekend Guide -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="things-to-do-in-garhmukteshwar-weekend-guide.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/bg/make-bg.jpg" alt="Things To Do In Garhmukteshwar Weekend Guide" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Weekend Guide</div>
+                                    <h2>Things to Do in Garhmukteshwar: Ultimate Weekend Guide</h2>
+                                    <p>Discover local attractions, ghat visits, boating, local cuisine, and spiritual spots for your weekend getaways.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 49. Top Amenities At Ganga County -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="top-amenities-at-ganga-county-what-makes-this-gated-township-premium.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Top Amenities At Ganga County" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Township Features</div>
+                                    <h2>Top Amenities at Ganga County Gated Township</h2>
+                                    <p>Explore premium facilities including clubhouse, green parks, wide roads, 24/7 security, and commercial hub.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 50. Township Development Garhmukteshwar Ganga County -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="township-development-garhmukteshwar-ganga-county.html">
-                                <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Township Development Garhmukteshwar Ganga County">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Township Development Garhmukteshwar Ganga County" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Development Status</div>
                                     <h2>Township Development Progress at Ganga County Garhmukteshwar</h2>
                                     <p>On-site execution updates covering drainage systems, main entrance gates, parks, and electrification.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 32. Udaan Kite Festival Ganga County -->
-                        <div class="col-md-6">
+                        <!-- 51. Udaan Kite Festival Ganga County -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="udaan-kite-festival-ganga-county.html">
-                                <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Udaan Kite Festival Ganga County">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/gallery/counter-img2.jpg" alt="Udaan Kite Festival Ganga County" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Township Events</div>
                                     <h2>Udaan Kite Festival at Ganga County</h2>
                                     <p>Highlights and celebration stories from the grand community event hosted inside the township.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 33. Who Owns Ganga County Garhmukteshwar -->
-                        <div class="col-md-6">
+                        <!-- 52. What To Check Before Buying Residential Plot In Uttar Pradesh -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="what-to-check-before-buying-residential-plot-in-uttar-pradesh.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-three/bg/make-bg.jpg" alt="What To Check Before Buying Residential Plot In Uttar Pradesh" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Legal &amp; Safety</div>
+                                    <h2>What to Check Before Buying a Residential Plot in Uttar Pradesh</h2>
+                                    <p>Essential legal checklist covering title verification, land use conversion, encumbrance certificates, and RERA compliance.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 53. Who Is Atomoney Meet The Developer Behind Ganga County -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="blog-card" href="who-is-atomoney-meet-the-developer-behind-ganga-county.html">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg2.jpg" alt="Who Is Atomoney Meet The Developer Behind Ganga County" loading="lazy">
+                                </div>
+                                <div class="blog-card-body">
+                                    <div class="blog-meta">Developer Profile</div>
+                                    <h2>Who is Atomoney? Meet the Developer Behind Ganga County</h2>
+                                    <p>Overview of Atomoney's real estate portfolio, company vision, past projects, and development credentials.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 54. Who Owns Ganga County Garhmukteshwar -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="who-owns-ganga-county-garhmukteshwar.html">
-                                <img src="../assets/images/home-one/hero/hero-bg2.jpg" alt="Who Owns Ganga County Garhmukteshwar">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg2.jpg" alt="Who Owns Ganga County Garhmukteshwar" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Developer Profile</div>
                                     <h2>Who Owns Ganga County Garhmukteshwar? Developer Profile</h2>
                                     <p>Learn about Atomoney, project background, promoter vision, and track record in real estate development.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 34. Why Invest Plots Near Ganga Expressway -->
-                        <div class="col-md-6">
+                        <!-- 55. Why Invest Plots Near Ganga Expressway -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="why-invest-plots-near-ganga-expressway.html">
-                                <img src="../assets/images/government-investment.jpeg" alt="Why Invest in Plots Near Ganga Expressway">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/government-investment.jpeg" alt="Why Invest in Plots Near Ganga Expressway" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Expressway Investment</div>
                                     <h2>Why Invest in Plots Near Ganga Expressway?</h2>
                                     <p>Understanding the impact of Uttar Pradesh's flagship 594 km expressway on land value appreciation.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
 
-                        <!-- 35. Why Weekend Homes Near Rivers Are Trending -->
-                        <div class="col-md-6">
+                        <!-- 56. Why Weekend Homes Near Rivers Are Trending -->
+                        <div class="col-lg-4 col-md-6">
                             <a class="blog-card" href="why-weekend-homes-near-rivers-trending-ncr.html">
-                                <img src="../assets/images/home-one/hero/hero-bg3.jpg" alt="Why Weekend Homes Near Rivers Are Trending in NCR">
+                                <div class="blog-card-img-wrapper">
+                                    <img src="../assets/images/home-one/hero/hero-bg3.jpg" alt="Why Weekend Homes Near Rivers Are Trending in NCR" loading="lazy">
+                                </div>
                                 <div class="blog-card-body">
                                     <div class="blog-meta">Lifestyle Trend</div>
                                     <h2>Why Weekend Homes Near Rivers Are Trending in NCR</h2>
                                     <p>Rising demand for riverfront second homes, weekend villas, and nature retreats near NH-9.</p>
+                                    <div class="blog-card-footer">Read Article <i class="fa-solid fa-arrow-right"></i></div>
                                 </div>
                             </a>
                         </div>
+
                     </div>
 
-                    <div class="text-center mt-30">
+                    <div class="text-center mt-50">
                         <a href="../pricing.html" class="theme-btn style-one">View Price List</a>
                         <a href="../contact.html" class="theme-btn style-one ms-2">Contact Sales</a>
                     </div>
