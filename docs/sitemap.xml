@@ -59,7 +59,7 @@
   <!-- Blog Index -->
   <url>
     <loc>https://gangacounty.com/blog/</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -114,7 +114,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Newly Added Blog Pages -->
+  <!-- Previously Added Blog Pages -->
   <url>
     <loc>https://gangacounty.com/blog/better-investment-near-delhi-ncr-2026.html</loc>
     <lastmod>2026-08-04</lastmod>
@@ -278,7 +278,74 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Legal & Utility Pages -->
+  <!-- Newly Added Blog Pages (August 2026 Update) -->
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-garhmukteshwar-reviews.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/best-places-to-buy-property-near-ganga-expressway-2026.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/blog-garhmukteshwar-vs-greater-noida-real-estate.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/brijghat-property-guide-second-home.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/garhmukteshwar-property-guide-2026-best-areas.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/garhmukteshwar-property-investment-guide-2026.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/garhmukteshwar-vs-meerut-property-investment-2026.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/how-to-choose-right-plot-size-weekend-home-garhmukteshwar.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/living-near-the-ganga-benefits-garhmukteshwar.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/things-to-do-in-garhmukteshwar-weekend-guide.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/what-to-check-before-buying-residential-plot-in-uttar-pradesh.html</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    -priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://gangacounty.com/privacy-policy/</loc>
     <lastmod>2026-07-28</lastmod>
