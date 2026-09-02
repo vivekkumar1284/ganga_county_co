@@ -59,7 +59,7 @@
   <!-- Blog Index -->
   <url>
     <loc>https://gangacounty.com/blog/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -462,7 +462,69 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Legal & Utilities -->
+  <!-- Newly Added Blog Articles -->
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-exit-strategy-resell-pre-launch-plot.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-miss-installment-penalty-grace-period-rules.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-land-banking-101-holding-for-10-years-smart-strategy.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-joint-ownership-co-investing-pros-cons-legal-steps.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-gifting-transferring-plot-family-legal-process-costs.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-gst-and-hidden-charges.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-emi-calculator-explained-sample-payment-schedules.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-down-payment-vs-construction-linked-plan.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-corner-plot-vs-park-facing-plot-price-premium-resale.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-can-you-mortgage-your-plot-for-a-loan-bank-rules-explained.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legal and Utilities -->
   <url>
     <loc>https://gangacounty.com/privacy-policy/</loc>
     <lastmod>2026-08-26</lastmod>
