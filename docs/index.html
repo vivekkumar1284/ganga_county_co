@@ -54,98 +54,6 @@
         .renvia-hero_one .hero-content .hero-slide-title {
             margin: 0;
         }
-        /* Overlay */
-        #popup-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.78);
-            display: none;
-            z-index: 99998;
-        }
-
-        /* Price-revision image popup (similar to gangacounty.co.in promo popup) */
-        .gc-popup {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: transparent;
-            width: min(92vw, 520px);
-            max-width: 520px;
-            border-radius: 8px;
-            display: none;
-            z-index: 99999;
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
-            overflow: visible;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        .gc-popup .popup-close {
-            position: absolute;
-            top: -14px;
-            right: -14px;
-            background: #000;
-            color: #fff;
-            border: 2px solid #fff;
-            width: 38px;
-            height: 38px;
-            font-size: 24px;
-            line-height: 1;
-            cursor: pointer;
-            border-radius: 50%;
-            padding: 0 0 3px;
-            z-index: 2;
-        }
-
-        .gc-popup-promo {
-            display: block;
-            margin: 0;
-            padding: 0;
-            border-radius: 8px;
-            overflow: hidden;
-            background: #fff;
-        }
-
-        .gc-popup-promo img {
-            display: block;
-            width: 100%;
-            height: auto;
-            max-height: min(82vh, 720px);
-            object-fit: contain;
-            background: #fff;
-        }
-
-        .gc-popup-cta {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 12px 14px 14px;
-            background: #fff;
-        }
-
-        .gc-popup-cta a {
-            display: inline-block;
-            background: #f89420;
-            color: #000;
-            font-weight: 700;
-            font-size: 13px;
-            letter-spacing: 0.4px;
-            text-decoration: none;
-            padding: 10px 16px;
-            border-radius: 3px;
-        }
-
-        @media (max-width: 480px) {
-            .gc-popup {
-                width: 94vw;
-                max-width: 94vw;
-            }
-            .gc-popup .popup-close {
-                top: -12px;
-                right: -8px;
-            }
-        }
     </style>
 
 
@@ -1244,6 +1152,13 @@
                                 <div class="gc-media-frame text-center">
                                     <img src="assets/images/government-investment.jpeg" alt="Government investment news for manufacturing and logistics clusters near Ganga Expressway — Hapur and Meerut" class="gc-notice-img">
                                     <p class="gc-video-caption mt-3">Regional growth news: major investment proposals along the Ganga Expressway corridor strengthen long-term demand around Garhmukteshwar.</p>
+                                    <ul class="check-list style-one mt-4 text-start">
+                                        <li class="check"><i class="iconoir-badge-check"></i><a href="https://hapur.nic.in/notice/sia-final-report-regarding-development-of-industrial-corridor-near-ganga-expressway/" target="_blank" rel="noopener">SIA Final Report — Industrial Corridor near Ganga Expressway (District Hapur)</a></li>
+                                        <li class="check"><i class="iconoir-badge-check"></i><a href="https://hapur.nic.in/notice/press-release-for-public-hearing-and-sia-draft-report-of-industrial-corridor-project-near-ganga-expressway/" target="_blank" rel="noopener">Public Hearing &amp; SIA Draft Report — Industrial Corridor near Ganga Expressway</a></li>
+                                        <li class="check"><i class="iconoir-badge-check"></i><a href="https://hapur.nic.in/notice/press-release-regarding-the-industrial-corridor-project-adjacent-to-the-ganga-expressway/" target="_blank" rel="noopener">Press Release — Industrial Corridor adjacent to Ganga Expressway</a></li>
+                                        <li class="check"><i class="iconoir-badge-check"></i><a href="https://thetravelandtourismtimes.com/lead-news-garhmukteshwar-gets-rs-19-50-cr-makeover-to-transform-into-spiritual-and-rural-tourism-hub/" target="_blank" rel="noopener">Garhmukteshwar ₹19.50 Cr makeover for spiritual &amp; rural tourism (Travel &amp; Tourism Times)</a></li>
+                                        <li class="check"><i class="iconoir-badge-check"></i><a href="https://timesofindia.indiatimes.com/city/lucknow/cabinet-nod-for-74-5-km-long-jewar-ganga-link-eway-costing-over-rs8k-cr/articleshow/132868837.cms" target="_blank" rel="noopener">Cabinet nod for 74.5-km Jewar–Ganga link expressway (Times of India)</a></li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-md-6 col-sm-12">
@@ -1306,8 +1221,6 @@
                 <!--======  End Blog Section  ======-->
 
             </main>
-
-            <!-- ===== Popup Contact Form ===== -->
 
             <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
 <script>
@@ -1458,66 +1371,6 @@
     <script src="assets/js/theme.js"></script>
     <!-- Icon -->
     <script src="https://kit.fontawesome.com/0a2fbe6b54.js" crossorigin="anonymous"></script>
-            <!-- Popup Overlay -->
-            <div id="popup-overlay"></div>
-
-            <!-- Event promo popup (like gangacounty.co.in top promo) -->
-            <div id="popup-form" class="gc-popup" role="dialog" aria-modal="true" aria-label="Udaan Utsav coming soon">
-                <button type="button" class="popup-close" aria-label="Close">&times;</button>
-                <div class="gc-popup-promo">
-                    <a href="contact.html">
-                        <img src="assets/images/udaan-utsav-iphone-contest-coming-soon.jpeg" alt="Udaan Utsav at Ganga County Garhmukteshwar — chance to win an iPhone, coming soon">
-                    </a>
-                    <div class="gc-popup-cta">
-                        <a href="tel:+919650655124">Call Now</a>
-                        <a href="contact.html">Enquire Now</a>
-                        <a href="pricing.html">View Price List</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <script>
-                (function () {
-                    const popup = document.getElementById('popup-form');
-                    const overlay = document.getElementById('popup-overlay');
-                    const closeBtn = document.querySelector('.popup-close');
-                    let scheduled = false;
-
-                    function showPopup() {
-                        popup.style.display = 'block';
-                        overlay.style.display = 'block';
-                        document.body.style.overflow = 'hidden';
-                    }
-
-                    function closePopup() {
-                        popup.style.display = 'none';
-                        overlay.style.display = 'none';
-                        document.body.style.overflow = '';
-                    }
-
-                    function schedulePopup() {
-                        if (scheduled) return;
-                        scheduled = true;
-                        setTimeout(showPopup, 1000);
-                    }
-
-                    window.addEventListener('load', schedulePopup);
-                    window.addEventListener('pageshow', function (event) {
-                        if (event.persisted) {
-                            scheduled = false;
-                            schedulePopup();
-                        }
-                    });
-
-                    closeBtn.addEventListener('click', closePopup);
-                    overlay.addEventListener('click', closePopup);
-                    document.addEventListener('keydown', function (e) {
-                        if (e.key === 'Escape') closePopup();
-                    });
-                })();
-            </script>
-
 
     <script src="site-config.js"></script>
     <script src="site-init.js"></script>
