@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Website Pages -->
   <url>
     <loc>https://gangacounty.com/</loc>
     <lastmod>2026-08-26</lastmod>
@@ -55,16 +54,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- Blog Index -->
   <url>
     <loc>https://gangacounty.com/blog/</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Articles -->
   <url>
     <loc>https://gangacounty.com/blog/atom-city-centre-shops-garhmukteshwar.html</loc>
     <lastmod>2026-08-26</lastmod>
@@ -384,13 +379,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/plots-in-garhmukuteshwar-complete-buyers-guide.html</loc>
+    <loc>https://gangacounty.com/blog/plots-in-garhmukteshwar-complete-buyers-guide.html</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/plots-in-garhmukteshwar-freehold-vs-leasehold-plots-garhmukuteshwar.html</loc>
+    <loc>https://gangacounty.com/blog/plots-in-garhmukteshwar-freehold-vs-leasehold-plots-garhmukteshwar.html</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -408,7 +403,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/plots-in-garhmukuteshwar-near-garh-ganga-complete-overview.html</loc>
+    <loc>https://gangacounty.com/blog/plots-in-garhmukteshwar-near-garh-ganga-complete-overview.html</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -515,8 +510,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Newly Added Blog Articles -->
   <url>
     <loc>https://gangacounty.com/blog/ganga-county-exit-strategy-resell-pre-launch-plot.html</loc>
     <lastmod>2026-09-02</lastmod>
@@ -560,7 +553,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/ganga_county-down-payment-vs-construction-linked-plan.html</loc>
+    <loc>https://gangacounty.com/blog/ganga-county-down-payment-vs-construction-linked-plan.html</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -577,8 +570,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Newly Added Provided Blogs -->
   <url>
     <loc>https://gangacounty.com/blog/best-plots-near-ganga-expressway-retirement-second-homes.html</loc>
     <lastmod>2026-09-14</lastmod>
@@ -592,13 +583,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/corner-plots-in-garhmukuteshwar-price-benefits.html</loc>
+    <loc>https://gangacounty.com/blog/corner-plots-in-garhmukteshwar-price-benefits.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/east-facing-plots-in-garhmukuteshwar-vastu-approved.html</loc>
+    <loc>https://gangacounty.com/blog/east-facing-plots-in-garhmukteshwar-vastu-approved.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -610,37 +601,35 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/how-to-book-a-plot-in-garhmukuteshwar-step-by-step-guide.html</loc>
+    <loc>https://gangacounty.com/blog/how-to-book-a-plot-in-garhmukteshwar-step-by-step-guide.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/plots-in-garhmukuteshwar-buyer-faqs-answered.html</loc>
+    <loc>https://gangacounty.com/blog/plots-in-garhmukteshwar-buyer-faqs-answered.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/plots-in-garhmukuteshwar-water-road-electricity-access.html</loc>
+    <loc>https://gangacounty.com/blog/plots-in-garhmukteshwar-water-road-electricity-access.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/secure-fenced-plots-in-garhmukuteshwar-buyers-safety-guide.html</loc>
+    <loc>https://gangacounty.com/blog/secure-fenced-plots-in-garhmukteshwar-buyers-safety-guide.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/upcoming-plot-sectors-near-garhmukuteshwar-worth-investing.html</loc>
+    <loc>https://gangacounty.com/blog/upcoming-plot-sectors-near-garhmukteshwar-worth-investing.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Newly Added Blogs (Districts, NRI, Distance, Forecast, Approvals, Fraud, Documents, Rent vs Buy, Stamp Duty, Industrial Corridor) -->
   <url>
     <loc>https://gangacounty.com/blog/best-districts-in-uttar-pradesh-to-buy-plots.html</loc>
     <lastmod>2026-09-16</lastmod>
@@ -654,25 +643,25 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/garhmukuteshwar-distance-from-delhi-route-guide.html</loc>
+    <loc>https://gangacounty.com/blog/garhmukteshwar-distance-from-delhi-route-guide.html</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/garhmukuteshwar-plot-price-forecast-2026-2030.html</loc>
+    <loc>https://gangacounty.com/blog/garhmukteshwar-plot-price-forecast-2026-2030.html</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/government-approved-plots-in-garhmukuteshwar.html</loc>
+    <loc>https://gangacounty.com/blog/government-approved-plots-in-garhmukteshwar.html</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/how-to-avoid-plot-fraud-in-garhmukuteshwar.html</loc>
+    <loc>https://gangacounty.com/blog/how-to-avoid-plot-fraud-in-garhmukteshwar.html</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -684,7 +673,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/renting-vs-buying-plot-garhmukuteshwar.html</loc>
+    <loc>https://gangacounty.com/blog/renting-vs-buying-plot-garhmukteshwar.html</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -696,24 +685,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gangacounty.com/blog/up-industrial-corridor-boosting-plot-prices-garhmukuteshwar.html</loc>
+    <loc>https://gangacounty.com/blog/up-industrial-corridor-boosting-plot-prices-garhmukteshwar.html</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <!-- Legal and Utilities -->
-  <url>
-    <loc>https://gangacounty.com/privacy-policy/</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://gangacounty.com/terms-and-conditions/</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://gangacounty.com/site-map.html</loc>
@@ -781,7 +756,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Newly Added Blogs (Schools, Testimonials, Insurance, Referral, Mela, Green Living, Group Booking, Cost of Living, RRTS, Flood Risk) -->
   <url>
     <loc>https://gangacounty.com/blog/plots-in-garhmukteshwar-near-schools-hospitals-daily-essentials.html</loc>
     <lastmod>2026-09-23</lastmod>
@@ -839,6 +813,104 @@
   <url>
     <loc>https://gangacounty.com/blog/plots-in-garhmukteshwar-flood-risk-monsoon-preparedness.html</loc>
     <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Newly Added Blogs (Sep 30, 2026) -->
+  <url>
+    <loc>https://gangacounty.com/blog/agricultural-vs-residential-plot-tax-after-conversion.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/cost-of-building-house-after-buying-plot-garhmukteshwar.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/distance-chart-schools-hospitals-essentials-garhmukteshwar.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/drainage-sewer-connection-guide-new-plot-owners.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/drone-satellite-verification-inspect-plot-remotely.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/ganga-county-how-far-is-ganga-county-from-delhi-noida-ghaziabad.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/garh-ganga-mela-kartik-purnima-effect-on-land-value.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/garhmukteshwar-plot-investment-success-stories.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/garhmukteshwar-plots-near-upcoming-metro-rrts-stations.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/garhmukteshwar-vs-rishikesh-riverside-plots-comparison.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/gram-panchayat-vs-nagar-palika-jurisdiction-plot-garhmukteshwar.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/how-far-is-garhmukteshwar-from-major-up-cities.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/plot-boundary-disputes-how-to-avoid-resolve.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/plot-mutation-process-after-purchase-garhmukteshwar.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/plot-registration-fees-breakdown-garhmukteshwar.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gangacounty.com/blog/registering-plot-in-childs-name-succession-inheritance.html</loc>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

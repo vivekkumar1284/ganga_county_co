@@ -38,7 +38,7 @@ Keywords below are taken from the **gangacounty keywords** sheet in `SEO_Work.md
 | Keyword | Intent | Target page |
 |---------|--------|-------------|
 | ganga county residential plots | Brand + residential | `index.html` |
-| ganga county residential plots garhmukteshwar | Brand + location | `index.html` / `overview.html` |
+| ganga county residential plotsgarhmukteshwar | Brand + location | `index.html` / `overview.html` |
 | ganga county plot project | Brand | `overview.html` |
 | ganga county approved plots | Trust / approval | `overview.html` |
 | ganga county commercial plots | Commercial | new commercial page / `index.html` |
@@ -61,11 +61,11 @@ Keywords below are taken from the **gangacounty keywords** sheet in `SEO_Work.md
 | residential plot in ganga county | `pricing.html` |
 | Commercial plot in ganga county | commercial page |
 | ganga county shops | commercial / Atom City Centre page |
-| Residential plots in garhmukteshwar | `index.html` / `pricing.html` |
-| commercial plot in garhmukteshwar | commercial page |
-| plot near garhmukteshwar | `location.html` |
-| commercial property in garhmukteshwar | commercial page |
-| villas in garhmukteshwar | `pricing.html` |
+| Residential plots ingarhmukteshwar | `index.html` / `pricing.html` |
+| commercial plot ingarhmukteshwar | commercial page |
+| plot neargarhmukteshwar | `location.html` |
+| commercial property ingarhmukteshwar | commercial page |
+| villas ingarhmukteshwar | `pricing.html` |
 | property investment in Garhmukteshwar | `overview.html` |
 | buy plots in Garhmukteshwar | `index.html` / `contact.html` |
 | land for sale in Garhmukteshwar | `pricing.html` |
@@ -189,13 +189,13 @@ Map **sheet keywords** into titles, H1s, first paragraphs, and internal anchors.
 |------|-------------------------------|---------------|
 | `overview.html` | ganga county plot project, approved plots, invest in ganga county, real estate project in Garhmukteshwar | Unique overview, approvals, township size, USP vs competitors |
 | `pricing.html` | ganga county plot price, ganga county price list, residential plot in ganga county | Table: size → starting price / “on request”; payment plan; EMI/loan note if true |
-| `location.html` | plot near garhmukteshwar, plots near Ganga Expressway | Distances (Railway, Brij Ghat, Expressway, NH-9), embedded map, landmarks |
+| `location.html` | plot neargarhmukteshwar, plots near Ganga Expressway | Distances (Railway, Brij Ghat, Expressway, NH-9), embedded map, landmarks |
 | `amenities.html` | Ganga County amenities | Clubhouse, parks, security — descriptive copy, not icon-only |
 | `master-plan.html` | Ganga County master plan | Layout explanation + downloadable plan (PDF with keyword filename) |
 | `highlights.html` | ganga county residential plots | Bullet USPs expanded into short paragraphs |
 | `gallery.html` | Ganga County project photos / properties in ganga county | Descriptive alts; captions with location/project name |
 | `contact.html` | buy plots in ganga county / buy plots in Garhmukteshwar | Form + phone + WhatsApp + map; schema `ContactPage` |
-| **New commercial page** | ganga county commercial plots, commercial property, ganga county shops, commercial plot in garhmukteshwar | Atom City Centre / shops — dedicated URL |
+| **New commercial page** | ganga county commercial plots, commercial property, ganga county shops, commercial plot ingarhmukteshwar | Atom City Centre / shops — dedicated URL |
 
 ### Image SEO to-do
 
